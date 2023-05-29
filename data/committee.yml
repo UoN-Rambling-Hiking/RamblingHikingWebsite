@@ -2,4 +2,32 @@ members:
     - identifier: president
       title: President
       name: Dan Lee
-      image: /img/comittee/dan.jpg
+      image: /img/comittee/pres.jpg
+    - identifier: treasurer
+      title: Treasurer
+      name: Amy Hooper
+      image: /img/comittee/
+    - identifier: gensec
+      title: General Secretary
+      name: Holly 
+      image: /img/comittee/
+    - identifier: saftey
+      title: Safety Officer
+      name: Maddy 
+      image: /img/comittee/
+    - identifier: ramble
+      title: Ramble Secretary
+      name: Fionn Mackie
+      image: /img/comittee/
+    - identifier: social
+      title: Social Secretary
+      name: Hafsa 
+      image: /img/comittee/
+    - identifier: publicity
+      title: Publicity Officer
+      name: Theo Smith 
+      image: /img/comittee/
+    - identifier: welfare
+      title: Welfare Officer
+      name: Ella  
+      image: /img/comittee/
