@@ -26,3 +26,9 @@ theme = "greenandgold"
     pre = "tag"
     url = "/tags/"
     weight = 4
+
+
+  [outputs]
+    home = ["HTML"]
+    section = ["HTML"]
+    page = ["HTML"]
