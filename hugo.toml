@@ -17,9 +17,9 @@ theme = "greenandgold"
     url = "/committee/"
     weight = 2
   [[menu.main]]
-    name = "Posts"
+    name = "Walks"
     pre = "pen-tool"
-    url = "/posts/"
+    url = "/walks/"
     weight = 3
   [[menu.main]]
     name = "Tags"
