@@ -22,7 +22,7 @@
 
         <h2>Upcoming walks</h2>
         <div>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
                 {{ range where .Pages "Section" "walks" }}
                 {{ if ge .Date (time.Now)}}
@@ -54,7 +54,7 @@
 
         <h2>Past walks</h2>
         <div>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
                 {{ range where .Pages "Section" "walks" }}
                 {{ if lt .Date (time.Now)}}

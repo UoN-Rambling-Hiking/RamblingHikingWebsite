@@ -8,5 +8,5 @@ Important thing
 ## Cost
 Important thing
 
-## Where to met us
+## Where to meet us
 Important thing

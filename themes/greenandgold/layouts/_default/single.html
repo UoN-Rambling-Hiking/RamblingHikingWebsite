@@ -17,7 +17,7 @@
     <div class="row ">
         <h1 class="display-4 col-9">{{ .Title }}</h1>
         <div class="col-1 align-self-center d-flex justify-content-center">
-            <a class="" href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>
+            <a class="" href="{{ .Params.photo_link }}"><img  src="/img/Google-Photos-logo.png" width="45"></a>
         </div>
         <div class="col-2 align-self-center d-flex justify-content-center ">
             <button type="button" class="btn btn-primary btn-uongreen"
@@ -29,13 +29,13 @@
     {{ partial "metadata.html" . }}
     <br><br>
     <div class="row">
-    <div class="col">
+    <div class="col-md-6 order-md-1 order-2">
     {{ .Content }}
     {{ partial "sundaywalk.html" . }}
     </div>
     {{ with .Resources.GetMatch "cover.*" }}
     {{ with .Fill "500x400" }}
-    <div class="col">
+    <div class="col-md-6 order-md-2 order-1">
     <img class="img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
     </div>
     {{ end }}
