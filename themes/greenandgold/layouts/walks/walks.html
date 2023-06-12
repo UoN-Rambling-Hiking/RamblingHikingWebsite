@@ -2,39 +2,60 @@
 
 <div id='map' style='width: 100%; height: 300px;'></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
-const map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v12', // style URL
-center: [-1.6762, 53.2152], // starting position [lng, lat]
-zoom: 6, // starting zoom
-});
-{{ range where .Pages "Section" "walks" }}
-new mapboxgl.Marker({color: "#065434",})
-.setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
-.addTo(map);
-{{ end }}
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v12', // style URL
+        center: [-1.6762, 53.2152], // starting position [lng, lat]
+        zoom: 6, // starting zoom
+    });
+    {{ range where .Pages "Section" "walks" }}
+    new mapboxgl.Marker({ color: "#065434", })
+        .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
+        .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a><p>{{ .Date.Format "02-01-2006" }}</p>'))
+        .addTo(map);
+    {{ end }}
 </script>
-
-<h1>List of upcoming walks</h1>
-    
+<div class="container">
+    <h1 class="display-4 text-center">Walks</h1>
+    <hr>
+    <h2>Upcoming walks</h2>
     <div>
-	<div>
-	</div>
-	<div>
-		<ul class="event-list">
+        <ul class="event-list">
             {{ $existEvents := false }}
-			{{ range where .Pages "Section" "walks" }}
-                    {{ $existEvents = true }}
-                    <li>
-                        <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
+            {{ range where .Pages "Section" "walks" }}
+            {{ if ge .Date (time.Now) }}
+            {{ $existEvents = true }}
+            <li>
+                <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+            {{ if not $existEvents }}
+            <p class="no-events">There are currently no upcoming walks, check back soon!</p>
+            {{ end }}
+        </ul>
+
+        <h2>Past walks</h2>
+        <div>
+            <ul class="event-list">
+                {{ $existEvents := false }}
+                {{ range where .Pages "Section" "walks" }}
+                {{ if lt .Date (time.Now)}}
+                {{ $existEvents = true }}
+                <li>
+                    <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title
+                        }}</a>
+                </li>
                 {{ end }}
-		</ul>
-        {{ if not $existEvents }}
-            <p class="no-events">There are currently no planned walks, check back soon!</p>
-        {{ end }}
-	</div>
+                {{ end }}
+                {{ if not $existEvents }}
+                <p class="no-events">There are currently no past walks, check back soon!</p>
+                {{ end }}
+            </ul>
+        </div>
+
+    </div>
 </div>
 
 {{ end }}
