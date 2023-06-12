@@ -19,40 +19,69 @@
 <div class="container">
     <h1 class="display-4 text-center">Walks</h1>
     <hr>
-    <h2>Upcoming walks</h2>
-    <div>
-        <ul class="event-list">
-            {{ $existEvents := false }}
-            {{ range where .Pages "Section" "walks" }}
-            {{ if ge .Date (time.Now) }}
-            {{ $existEvents = true }}
-            <li>
-                <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
-            {{ if not $existEvents }}
-            <p class="no-events">There are currently no upcoming walks, check back soon!</p>
-            {{ end }}
-        </ul>
 
-        <h2>Past walks</h2>
+        <h2>Upcoming walks</h2>
         <div>
-            <ul class="event-list">
+            <div class="row">
                 {{ $existEvents := false }}
                 {{ range where .Pages "Section" "walks" }}
-                {{ if lt .Date (time.Now)}}
+                {{ if ge .Date (time.Now)}}
                 {{ $existEvents = true }}
-                <li>
-                    <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title
-                        }}</a>
-                </li>
+                <div class="col">
+                    <div class="text-center card">
+                        <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                        {{ with .Resources.GetMatch "cover.*" }}
+                        <div>
+                            {{ with .Fill "500x300" }}
+                        <img class="card-img-top img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title text-uon-green">{{ .Title}} </h3>
+                    <time class="card-text text-uon-green">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                </div>
+                    </a>
+                    </div>
+                </div>
                 {{ end }}
                 {{ end }}
                 {{ if not $existEvents }}
                 <p class="no-events">There are currently no past walks, check back soon!</p>
                 {{ end }}
-            </ul>
+            </div>
+        </div>
+
+        <h2>Past walks</h2>
+        <div>
+            <div class="row">
+                {{ $existEvents := false }}
+                {{ range where .Pages "Section" "walks" }}
+                {{ if lt .Date (time.Now)}}
+                {{ $existEvents = true }}
+                <div class="col">
+                    <div class="text-center card">
+                        <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                        {{ with .Resources.GetMatch "cover.*" }}
+                        <div>
+                            {{ with .Fill "500x300" }}
+                        <img class="card-img-top img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title text-uon-green">{{ .Title}} </h3>
+                    <time class="card-text text-uon-green">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                </div>
+                    </a>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+                {{ if not $existEvents }}
+                <p class="no-events">There are currently no past walks, check back soon!</p>
+                {{ end }}
+            </div>
         </div>
 
     </div>
