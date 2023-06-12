@@ -1,0 +1,32 @@
+:root {
+    --uon-sport-green: #065434;
+    --uon-sport-gold: #DEB408;
+}
+
+
+
+.navbar{
+    background-color: var(--uon-sport-green) !important;
+
+    .navbar-nav{
+        .nav-link{
+            color: white !important;
+        }
+        .nav-link:hover, .nav-link.active{
+            color: var(--uon-sport-gold) !important;
+        }
+        
+    }
+
+}
+
+.hero-title{
+    h1{
+        color: var(--uon-sport-gold) !important;
+    }
+}
+
+.top-25{
+    top: 25%;
+}
+

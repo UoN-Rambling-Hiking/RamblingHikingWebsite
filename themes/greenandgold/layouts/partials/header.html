@@ -1,12 +1,12 @@
 <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Rambling & Hiking</a>
+          <img class="navbar-brand d-inline-block align-text-top p-1" src="/img/UoNSport_Gold.png" width="45">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav col-lg justify-content-lg-center">
               {{ range .Site.Menus.main }}
               <li class="nav-item">
                 {{ $text := print .Name | safeHTML }}
@@ -14,8 +14,9 @@
               </li>
               {{ end }}
             </ul>
-            <button type="button" class="btn btn-outline-primary" onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us</button>
+            <button type="button" class="btn btn-outline-light btn-md" onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us</button>
           </div>
         </div>
       </nav>
+
 </div>
