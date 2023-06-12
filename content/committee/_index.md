@@ -1,3 +1,4 @@
 ---
+menu: 'main'
 title: Committee
 ---

@@ -11,21 +11,6 @@ theme = "greenandgold"
     pre = "home"
     url = "/"
     weight = 1
-  [[menu.main]]
-    name = "Committee"
-    pre = "pen-tool"
-    url = "/committee/"
-    weight = 2
-  [[menu.main]]
-    name = "Walks"
-    pre = "pen-tool"
-    url = "/walks/"
-    weight = 3
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
-    weight = 4
 
 
   [outputs]

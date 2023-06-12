@@ -27,7 +27,7 @@ new mapboxgl.Marker({color: "#065434",})
 			{{ range where .Pages "Section" "walks" }}
                     {{ $existEvents = true }}
                     <li>
-                        <time>{{ .Date.Format "2 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <time>{{ .Date.Format "Mon 02 Jan 2006" }}&mdash;</time><a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </li>
                 {{ end }}
 		</ul>

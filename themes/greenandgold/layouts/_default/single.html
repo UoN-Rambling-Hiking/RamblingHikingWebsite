@@ -12,8 +12,14 @@ const marker = new mapboxgl.Marker({color: "#065434",})
 .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
 .addTo(map);
 </script>
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
+
+<div class="container ">
+    <h1>{{ .Title }}</h1>
+    <a href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="50"></a>
+    <br>
+    {{ partial "metadata.html" . }}
+    <br><br>
+    {{ .Content }}
+    {{ partial "sundaywalk.html" . }}
+    </div>
 {{ end }}

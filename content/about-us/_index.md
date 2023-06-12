@@ -1,4 +1,4 @@
 ---
 menu: 'main'
-title: Walks
+title: About Us
 ---
