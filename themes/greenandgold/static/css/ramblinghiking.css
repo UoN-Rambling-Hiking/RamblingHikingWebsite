@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Soho Std Regular;
+    src: url("Soho Std Regular.otf") format("opentype");
+}
 :root {
     --uon-sport-green: #065434;
     --uon-sport-gold: #DEB408;
@@ -49,4 +53,28 @@
 
 .text-uon-green{
     color: var(--uon-sport-green) !important;
+}
+
+.bg-uon-green{
+    background-color: var(--uon-sport-green) !important;
+}
+
+.border-uon-green{
+    border-color: var(--uon-sport-green) !important;
+}
+
+.text-uon-gold{
+    color: var(--uon-sport-gold) !important;
+}
+
+.bg-uon-gold{
+    background-color: var(--uon-sport-gold) !important;
+}
+
+.border-uon-gold{
+    border-color: var(--uon-sport-gold) !important;
+}
+
+.font-uon{
+    font-family: 'Soho Std Regular', sans-serif !important;
 }
