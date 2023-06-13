@@ -1,45 +1,5 @@
 {{ define "main" }}
-<div id='map' style='width: 100%; height: 300px;'></div>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: ['{{ .Params.lng }}', '{{ .Params.lat }}'], // starting position [lng, lat]
-        zoom: 10, // starting zoom
-    });
-    const marker = new mapboxgl.Marker({ color: "#065434", })
-        .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
-        .addTo(map);
-</script>
-
-<div class="container my-5">
-    <div class="row ">
-        <h1 class="display-4 col-9">{{ .Title }}</h1>
-        <div class="col-1 align-self-center d-flex justify-content-center">
-            <a class="" href="{{ .Params.photo_link }}"><img  src="/img/Google-Photos-logo.png" width="45"></a>
-        </div>
-        <div class="col-2 align-self-center d-flex justify-content-center ">
-            <button type="button" class="btn btn-primary btn-uongreen"
-                onclick="location.href='{{ .Params.ticket_link }}';">Buy Ticket</button>
-        </div>
-    </div>
-    <hr>
-    <br>
-    {{ partial "metadata.html" . }}
-    <br><br>
-    <div class="row">
-    <div class="col-md-6 order-md-1 order-2">
-    {{ .Content }}
-    {{ partial "sundaywalk.html" . }}
-    </div>
-    {{ with .Resources.GetMatch "cover.*" }}
-    {{ with .Fill "500x400" }}
-    <div class="col-md-6 order-md-2 order-1">
-    <img class="img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-    </div>
-    {{ end }}
-    {{ end }}
-</div>
+<div class="container">
+    <h1 class="display-4 col-9">{{ .Title }}</h1>
 </div>
 {{ end }}

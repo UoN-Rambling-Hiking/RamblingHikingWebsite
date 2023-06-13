@@ -1,6 +1,0 @@
----
-title: "Sundaything"
----
-
-# Hi
-

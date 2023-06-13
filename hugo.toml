@@ -15,5 +15,5 @@ theme = "greenandgold"
 
   [outputs]
     home = ["HTML"]
-    section = ["HTML"]
+    section = ["HTML", "Calendar"]
     page = ["HTML"]
