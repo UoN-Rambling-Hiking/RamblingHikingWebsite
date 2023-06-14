@@ -28,7 +28,7 @@
                 {{ if ge .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col">
-                    <div class="text-center card">
+                    <div class="text-center card hvr-grow-shadow">
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
                         {{ with .Resources.GetMatch "cover.*" }}
                         <div>
@@ -60,7 +60,7 @@
                 {{ if lt .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col">
-                    <div class="text-center card">
+                    <div class="text-center card hvr-grow-shadow">
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
                         {{ with .Resources.GetMatch "cover.*" }}
                         <div>

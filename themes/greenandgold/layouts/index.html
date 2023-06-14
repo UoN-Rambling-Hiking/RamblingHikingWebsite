@@ -27,7 +27,7 @@
       {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
       {{ range $events}}
       <a href="{{ .RelPermalink }}">
-      <div class="card border border-uon-gold border-4 text-white">
+      <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
         {{ with .Resources.GetMatch "cover.*" }}
         {{ with .Fill "500x300" }}
         <img src="{{ .RelPermalink }}" class="img-fluid">
@@ -45,7 +45,7 @@
       {{ $events := where .Site.RegularPages  "Section" "walks" }}
       {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
       {{ range $events}}
-      <div class="card text-white border border-4 border-uon-green">
+      <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
         {{ with .Resources.GetMatch "cover.*" }}
         {{ with .Fill "500x300" }}
         <img src="{{ .RelPermalink }}" class="img-fluid" >
