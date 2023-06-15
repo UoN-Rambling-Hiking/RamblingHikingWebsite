@@ -6,6 +6,7 @@ lat: "53.2152"
 photo_link: "https://photos.google.com/share/AF1QipP7-VBx9MDFWN_ABFhhM1RzZMZc55BK8zH6_ZkTc0BXJKKVBr-Ej-bwaQYom0GsQA?key=RVdWaWFhRkhqelp6Q3BSaGo2aE9JQmlDc0dDY1lB"
 ticket_link: "https://www.eventbrite.co.uk/e/walk-in-bakewell-with-the-rambling-and-hiking-club-tickets-642864895207"
 img_location: "images/bakewell.jpg"
+walks: [["Walk 1",https://explore.osmaps.com/route/17112352/bakewell-walk-1--june-2023-fionn], ["Walk 2a",https://explore.osmaps.com/route/17113196/bakewell-walk-2a--june-2023-fionn], ["Walk 2b", "https://explore.osmaps.com/route/17100233/bakewell-walk-2b--june-2023-fionn"], ["Walk 3a", "https://explore.osmaps.com/route/17115281/bakewell-walk-3a--june-2023-fionn"], ["Walk 3b", "https://explore.osmaps.com/route/17114195/bakewell-walk-3b--june-2023-fionn"]]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.
