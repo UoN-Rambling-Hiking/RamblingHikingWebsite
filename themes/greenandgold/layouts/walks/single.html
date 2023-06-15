@@ -3,13 +3,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
+    const colors = ['#443c90','#d40058','#33691f', '#ffc108', '#0298ce'];
     const start = ['{{ .Params.lng }}', '{{ .Params.lat }}']
+    var i = 0;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/dan-lee76/cliry1gm600nw01qv1p9f20fm', // style URL
         center: start, // starting position [lng, lat]
         zoom: 10, // starting zoom
-    }).addControl(new mapboxgl.FullscreenControl());;
+    }).addControl(new mapboxgl.FullscreenControl()).addControl(new mapboxgl.NavigationControl()).addControl(new mapboxgl.ScaleControl());
     const marker = new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(start)
         .addTo(map);
@@ -36,13 +38,36 @@
                     layout: {
                         'line-cap': 'round',
                         'line-join': 'round',
+                        
                       },
                     'paint': {
-                        'line-color': '#888',
+                        'line-color': colors[i++],
                         'line-width': 4,
                         'line-opacity': 0.8
                     }
                 });
+                var activeRoute = null;
+                map.on('click', '{{ index . 0}}', function (e) {
+                    new mapboxgl.Popup()
+                        .setLngLat(e.lngLat)
+                        .setHTML('<h4>{{ index . 0}}</h4><p>{{ index . 2}}</p>')
+                        .addTo(map);
+                    
+
+                });
+                map.on('mouseenter', '{{ index . 0}}', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                    map.setPaintProperty('{{ index . 0}}', 'line-width', 6);
+                    map.moveLayer('{{ index . 0}}');
+                    map.setPaintProperty('{{ index . 0}}', 'line-opacity', 1);
+                });
+                map.on('mouseleave', '{{ index . 0}}', function () {
+                    map.getCanvas().style.cursor = '';
+                    map.setPaintProperty('{{ index . 0}}', 'line-width', 4);
+                    map.setPaintProperty('{{ index . 0}}', 'line-opacity', 0.8);
+                });
+
+
             });
         })
         {{ end }}
