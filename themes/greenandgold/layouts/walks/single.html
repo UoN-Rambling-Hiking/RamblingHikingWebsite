@@ -17,7 +17,6 @@
         .addTo(map);
     {{ range .Params.walks}}
         $.get("https://api.danlee.uk/ramsoc/?url={{ index . 1}}", function(data, status){
-            console.log(data)
             map.on('load', () => {
             
                 map.addSource('{{ index . 0}}', {
@@ -43,7 +42,7 @@
                     'paint': {
                         'line-color': colors[i++],
                         'line-width': 4,
-                        'line-opacity': 0.8
+                        'line-opacity': 0.5
                     }
                 });
                 var activeRoute = null;
@@ -64,7 +63,7 @@
                 map.on('mouseleave', '{{ index . 0}}', function () {
                     map.getCanvas().style.cursor = '';
                     map.setPaintProperty('{{ index . 0}}', 'line-width', 4);
-                    map.setPaintProperty('{{ index . 0}}', 'line-opacity', 0.8);
+                    map.setPaintProperty('{{ index . 0}}', 'line-opacity', 0.5);
                 });
 
 

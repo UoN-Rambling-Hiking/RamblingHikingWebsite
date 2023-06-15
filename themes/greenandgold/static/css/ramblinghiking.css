@@ -1,6 +1,6 @@
 @font-face {
     font-family: Soho Std Regular;
-    src: url("Soho Std Regular.otf") format("opentype");
+    src: url("../SohoStdRegular.otf") format("opentype");
 }
 :root {
     --uon-sport-green: #065434;
