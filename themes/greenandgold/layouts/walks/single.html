@@ -16,7 +16,8 @@
         .setLngLat(start)
         .addTo(map);
     {{ range .Params.walks}}
-        $.get("https://api.danlee.uk/ramsoc/?url={{ index . 1}}", function(data, status){
+    $.get("https://api.danlee.uk/ramsoc/?url={{ index . 1}}", function(data, status){
+            console.log(data)
             map.on('load', () => {
             
                 map.addSource('{{ index . 0}}', {
@@ -26,7 +27,7 @@
                         'properties': {},
                         'geometry': {
                             'type': 'LineString',
-                            'coordinates': JSON.parse(data)
+                            'coordinates': data[0]
                         }
                     }
                 });
@@ -49,7 +50,7 @@
                 map.on('click', '{{ index . 0}}', function (e) {
                     new mapboxgl.Popup()
                         .setLngLat(e.lngLat)
-                        .setHTML('<h4>{{ index . 0}}</h4><p>{{ index . 2}}</p>')
+                        .setHTML('<h4>{{ index . 0}}</h4><p>Distance: '+(data[1]/100).toFixed(2)+'km</p><p>Elevation: '+data[2].toFixed(2)+'m</p>')
                         .addTo(map);
                     
 
