@@ -6,10 +6,10 @@
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/dan-lee76/cliry1gm600nw01qv1p9f20fm', // style URL
-        center: [-1.6762, 53.2152], // starting position [lng, lat]
-        zoom: 6, // starting zoom
+        center: [-1.1549, 52.9545], // starting position [lng, lat]
+        zoom: 11, // starting zoom
     });
-    {{ range where .Pages "Section" "walks" }}
+    {{ range where .Pages "Section" "socials" }}
     new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
         .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a><p>{{ .Date.Format "02-01-2006" }}</p>'))
@@ -17,14 +17,14 @@
     {{ end }}
 </script>
 <div class="container">
-    <h1 class="display-4 text-center">Walks</h1>
+    <h1 class="display-4 text-center">Socials</h1>
     <hr>
 
-        <h2>Upcoming walks</h2>
+        <h2>Upcoming socials</h2>
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
-                {{ range where .Pages "Section" "walks" }}
+                {{ range where .Pages "Section" "socials" }}
                 {{ if ge .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col pb-3">
@@ -32,7 +32,7 @@
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
                             <div>
                                 {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
-                            {{ with .Fill "500x300" }}
+                            {{ with .Fit "500x300" }}
                         <img class="card-img-top img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                         {{ end }}
                         {{ end }}
@@ -47,23 +47,23 @@
                 {{ end }}
                 {{ end }}
                 {{ if not $existEvents }}
-                <p class="no-events">There are currently no past walks, check back soon!</p>
+                <p class="no-events">There are currently no past socials, check back soon!</p>
                 {{ end }}
             </div>
         </div>
 
-        <h2>Past walks</h2>
+        <h2>Past socials</h2>
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
-                {{ range where .Pages "Section" "walks" }}
+                {{ range where .Pages "Section" "socials" }}
                 {{ if lt .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col pb-3">
                     <div class="text-center card hvr-grow-shadow">
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
                             <div>
-                                {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                        {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
                             {{ with .Fill "500x300" }}
                         <img class="card-img-top img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                         {{ end }}
@@ -79,7 +79,7 @@
                 {{ end }}
                 {{ end }}
                 {{ if not $existEvents }}
-                <p class="no-events">There are currently no past walks, check back soon!</p>
+                <p class="no-events">There are currently no past socials, check back soon!</p>
                 {{ end }}
             </div>
         </div>

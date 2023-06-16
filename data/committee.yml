@@ -9,11 +9,11 @@ members:
       image: /img/comittee/
     - identifier: gensec
       title: General Secretary
-      name: Holly 
+      name: Holly Salaman
       image: /img/comittee/
     - identifier: saftey
       title: Safety Officer
-      name: Maddy 
+      name: Maddy Flynn
       image: /img/comittee/
     - identifier: ramble
       title: Ramble Secretary
@@ -21,7 +21,7 @@ members:
       image: /img/comittee/
     - identifier: social
       title: Social Secretary
-      name: Hafsa 
+      name: Hafsa Sheikh
       image: /img/comittee/
     - identifier: publicity
       title: Publicity Officer
@@ -29,5 +29,5 @@ members:
       image: /img/comittee/
     - identifier: welfare
       title: Welfare Officer
-      name: Ella  
+      name: Ella McLeod
       image: /img/comittee/

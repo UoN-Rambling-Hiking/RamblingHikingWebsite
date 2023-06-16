@@ -4,14 +4,22 @@
 
 <div class="container my-5">
     <div class="row ">
-        <h1 class="display-4 col-9">{{ .Title }}</h1>
-        <div class="col-1 align-self-center d-flex justify-content-center">
-            <a class="" href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>
+        <h1 class="display-4 col-md-9 col-7">{{ .Title }} | {{ .Date.Format "Mon 02 Jan 2006" }}</h1>
+        {{ if isset .Params "photo_link" }}
+        <div class="col-md-1 col-2 align-self-center d-flex justify-content-center">
+            <a href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>
         </div>
-        <div class="col-2 align-self-center d-flex justify-content-center ">
+        {{ end }}
+        {{ if (isset .Params "ticket_link") }}
+        <div class="col-md-2 col-3 align-self-center d-flex justify-content-center ">
+        {{ if ge .Date (time.Now)}}
             <button type="button" class="btn btn-primary btn-uongreen"
                 onclick="location.href='{{ .Params.ticket_link }}';">Buy Ticket</button>
-        </div>
+                {{ else }}
+                <button type="button" class="btn btn-primary btn-uongreen disabled" disabled>Buy Ticket</button>
+                {{ end }}
+            </div>
+        {{ end }}
     </div>
     <hr>
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -26,9 +34,6 @@
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-    <br>
-    {{ partial "metadata.html" . }}
-    <br><br>
     <div class="row">
         <div class="col-md-6 order-md-1 order-2">
             {{ .Content }}
@@ -116,7 +121,7 @@
                     map.setPaintProperty('{{ index . 0}}', 'line-opacity', 0.5);
                 });
                 
-                document.getElementById("{{index . 0}}-info").innerHTML = '<p>Distance: '+(data[1]/100).toFixed(2)+'km</p><p>Elevation: '+data[2].toFixed(2)+'m</p>'
+                document.getElementById("{{index . 0}}-info").innerHTML = '<p>Distance: '+(data[1]/1000).toFixed(2)+'km</p><p>Elevation: '+data[2].toFixed(2)+'m</p>'
             });
         })
         {{ end }}
