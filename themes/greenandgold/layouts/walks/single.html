@@ -1,6 +1,55 @@
 {{ define "main" }}
 <div id='map' style='width: 100%; height: 300px;'></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="container my-5">
+    <div class="row ">
+        <h1 class="display-4 col-9">{{ .Title }}</h1>
+        <div class="col-1 align-self-center d-flex justify-content-center">
+            <a class="" href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>
+        </div>
+        <div class="col-2 align-self-center d-flex justify-content-center ">
+            <button type="button" class="btn btn-primary btn-uongreen"
+                onclick="location.href='{{ .Params.ticket_link }}';">Buy Ticket</button>
+        </div>
+    </div>
+    <hr>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">General Info</button>
+        </li>
+        {{ range .Params.walks}}
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-{{ index . 0 }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ index . 0 }}" type="button" role="tab" aria-controls="pills-{{ index . 0 }}" aria-selected="false">{{ index . 0 }}</button>
+        </li>
+        {{end}}
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <br>
+    {{ partial "metadata.html" . }}
+    <br><br>
+    <div class="row">
+        <div class="col-md-6 order-md-1 order-2">
+            {{ .Content }}
+        </div>
+        {{ with .Resources.GetMatch "cover.*" }}
+        {{ with .Fill "500x400" }}
+        <div class="col-md-6 order-md-2 order-1">
+            <img class="img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+    </div>
+    {{ range .Params.walks}}
+    <div class="tab-pane fade" id="pills-{{index . 0}}" role="tabpanel" aria-labelledby="pills-{{index . 0}}-tab" tabindex="0">
+        <h2>{{ index . 0}}</h2>
+        <div id="{{index . 0}}-info"></div>
+        {{ index . 2}}
+      </div>
+      {{end}}
+</div>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
     const colors = ['#443c90','#d40058','#33691f', '#ffc108', '#0298ce'];
@@ -10,7 +59,7 @@
         container: 'map', // container ID
         style: 'mapbox://styles/dan-lee76/cliry1gm600nw01qv1p9f20fm', // style URL
         center: start, // starting position [lng, lat]
-        zoom: 10, // starting zoom
+        zoom: 11, // starting zoom
     }).addControl(new mapboxgl.FullscreenControl()).addControl(new mapboxgl.NavigationControl()).addControl(new mapboxgl.ScaleControl());
     const marker = new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(start)
@@ -66,42 +115,37 @@
                     map.setPaintProperty('{{ index . 0}}', 'line-width', 4);
                     map.setPaintProperty('{{ index . 0}}', 'line-opacity', 0.5);
                 });
-
-
+                
+                document.getElementById("{{index . 0}}-info").innerHTML = '<p>Distance: '+(data[1]/100).toFixed(2)+'km</p><p>Elevation: '+data[2].toFixed(2)+'m</p>'
             });
         })
         {{ end }}
 
+        const pilEls = document.querySelectorAll('button[data-bs-toggle="pill"]')
+        console.log(pilEls)
+        pilEls.forEach(function (elem){
+            console.log(elem)
+            elem.addEventListener('shown.bs.tab', event =>{
+                map.flyTo({
+                    center: start,
+                    zoom: 11
+                });
+                id = event.target.id.split('-')[1]
+                if(id != "home"){
+                map.setPaintProperty(id, 'line-width', 6);
+                map.setPaintProperty(id, 'line-opacity', 1);
+                map.moveLayer(id);
+                }
+
+                previousId = event.relatedTarget.id.split('-')[1]
+                if(previousId != "home"){
+                map.setPaintProperty(previousId, 'line-width', 4);
+                map.setPaintProperty(previousId, 'line-opacity', 0.5);
+                }
+
+            })
+        })
+
    
 </script>
-
-<div class="container my-5">
-    <div class="row ">
-        <h1 class="display-4 col-9">{{ .Title }}</h1>
-        <div class="col-1 align-self-center d-flex justify-content-center">
-            <a class="" href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>
-        </div>
-        <div class="col-2 align-self-center d-flex justify-content-center ">
-            <button type="button" class="btn btn-primary btn-uongreen"
-                onclick="location.href='{{ .Params.ticket_link }}';">Buy Ticket</button>
-        </div>
-    </div>
-    <hr>
-    <br>
-    {{ partial "metadata.html" . }}
-    <br><br>
-    <div class="row">
-        <div class="col-md-6 order-md-1 order-2">
-            {{ .Content }}
-            {{ partial "sundaywalk.html" . }}
-        </div>
-        {{ with .Resources.GetMatch "cover.*" }}
-        {{ with .Fill "500x400" }}
-        <div class="col-md-6 order-md-2 order-1">
-            <img class="img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-        </div>
-        {{ end }}
-        {{ end }}
-    </div>
-</div>
 {{ end }}
