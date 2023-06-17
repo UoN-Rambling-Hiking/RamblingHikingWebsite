@@ -7,11 +7,6 @@ theme = "greenandgold"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    pre = "home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
     name = "Get Involved"
     weight = 2
   [[menu.main]]

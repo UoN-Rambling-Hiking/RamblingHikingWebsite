@@ -24,6 +24,24 @@
 
 }
 
+.nav-pills{
+    .nav-link{
+        color: var(--uon-sport-green) !important;
+    }
+    .nav-link:hover, .nav-link.active{
+        color: var(--uon-sport-gold) !important;
+        background-color: var(--uon-sport-green) !important;
+    }
+    .nav-item{
+        color: var(--uon-sport-green) !important;
+    }
+    .nav-item:hover, .nav-item.active{
+        color: var(--uon-sport-gold) !important;
+    }
+
+}
+
+
 .dropdown-menu{
     background-color: var(--uon-sport-green) !important;
     .dropdown-item{

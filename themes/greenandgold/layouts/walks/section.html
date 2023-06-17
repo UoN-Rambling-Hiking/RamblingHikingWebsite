@@ -24,7 +24,7 @@
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
-                {{ range where .Pages "Section" "walks" }}
+                {{ range (where .Pages "Section" "walks").Reverse }}
                 {{ if ge .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col pb-3">
@@ -56,7 +56,7 @@
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
-                {{ range where .Pages "Section" "walks" }}
+                {{ range (where .Pages "Section" "walks").Reverse }}
                 {{ if lt .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col pb-3">

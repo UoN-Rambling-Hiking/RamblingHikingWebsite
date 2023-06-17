@@ -12,25 +12,27 @@
 
           <div class="collapse navbar-collapse d-lg-flex col-9" id="navbarSupportedContent">
             <ul class="navbar-nav col-lg-8 justify-content-lg-center">
+              {{ $page := .Page }}
               {{ range .Site.Menus.main }}
-              
+              {{ $is := $page.IsMenuCurrent "main" . }}
+              {{ $has := $page.HasMenuCurrent "main" . }}
               {{ if .HasChildren }}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle {{if $has}} active {{end}}" href="#" id="navbarDropdown{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{ .Name }}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
                   {{ range .Children }}
-                  <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                  <li><a class="dropdown-item {{if $is}} active {{end}}" href="{{ .URL }}">{{ .Name }}</a></li>
                   {{ end }}
                 </ul>
               {{ else }}
               <li class="nav-item">
                 {{ $text := print .Name | safeHTML }}
-                <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+                {{/* (and (eq $page.Name "Rambling & Hiking") (eq .Name "Home")) <-- Used if _index.md is not used for homepage*/}}
+                <a class='nav-link {{if $is }} active {{end}}' href="{{ .URL }}">{{ $text }}</a>
               </li>
               {{ end }}
-
               {{ end }}
             </ul>
             <div class="d-lg-flex col-lg-4 justify-content-lg-end">
