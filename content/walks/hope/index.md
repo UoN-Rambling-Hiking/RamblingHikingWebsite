@@ -1,8 +1,8 @@
 ---
 title: "Hope"
 date: 2023-06-03T14:15:59-06:00
-lng: "-1.6903"
-lat: "53.3389"
+lng: "-1.7428"
+lat: "53.3481"
 img_location: "images/bakewell.jpg"
 ---
 

@@ -30,8 +30,10 @@
     }
 }
 
-.top-25{
+@media (min-width: 992px) {
+.top-lg-25{
     top: 25%;
+}
 }
 
 .btn-uongreen{
