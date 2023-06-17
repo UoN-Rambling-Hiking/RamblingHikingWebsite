@@ -13,10 +13,24 @@
           <div class="collapse navbar-collapse d-lg-flex col-9" id="navbarSupportedContent">
             <ul class="navbar-nav col-lg-8 justify-content-lg-center">
               {{ range .Site.Menus.main }}
+              
+              {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
+                  {{ range .Children }}
+                  <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ else }}
               <li class="nav-item">
                 {{ $text := print .Name | safeHTML }}
                 <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
               </li>
+              {{ end }}
+
               {{ end }}
             </ul>
             <div class="d-lg-flex col-lg-4 justify-content-lg-end">

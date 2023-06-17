@@ -24,6 +24,17 @@
 
 }
 
+.dropdown-menu{
+    background-color: var(--uon-sport-green) !important;
+    .dropdown-item{
+        color: white !important;
+    }
+    .dropdown-item:hover{
+        color: var(--uon-sport-gold) !important;
+        background-color: var(--uon-sport-green) !important;
+    }
+}
+
 .hero-title{
     h1{
         color: var(--uon-sport-gold) !important;
