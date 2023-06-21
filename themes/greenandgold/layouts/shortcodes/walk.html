@@ -1,0 +1,61 @@
+<p>{{.Inner}}</p><hr>
+<script>
+  console.log('{{ .Get "os" }}')
+  $.get('https://api.danlee.uk/ramsoc/?url={{ .Get "os" }}', function (data, status) {
+    console.log(data)
+    map.addSource('{{ .Get "name"}}', {
+      'type': 'geojson',
+      'data': {
+        'type': 'Feature',
+        'properties': {},
+        'geometry': {
+          'type': 'LineString',
+          'coordinates': data[0]
+        }
+      }
+    });
+    map.addLayer({
+      'id': '{{ .Get "name"}}',
+      'type': 'line',
+      'source': '{{ .Get "name"}}',
+      layout: {
+        'line-cap': 'round',
+        'line-join': 'round',
+
+      },
+      'paint': {
+        'line-color': colors[i++],
+        'line-width': 4,
+        'line-opacity': 0.5
+      }
+    });
+    var activeRoute = null;
+    map.on('click', '{{ .Get "name" }}', function (e) {
+      new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML('<h4>{{ .Get "name"}}</h4><p>Distance: ' + (data[1] / 100).toFixed(2) + 'km</p><p>Elevation: ' + data[2].toFixed(2) + 'm</p>')
+        .addTo(map);
+
+
+    });
+    map.on('mouseenter', '{{ .Get "name"}}', function () {
+      map.getCanvas().style.cursor = 'pointer';
+      map.setPaintProperty('{{ .Get "name"}}', 'line-width', 6);
+      map.moveLayer('{{ .Get "name"}}');
+      map.setPaintProperty('{{ .Get "name"}}', 'line-opacity', 1);
+    });
+    map.on('mouseleave', '{{ .Get "name"}}', function () {
+      map.getCanvas().style.cursor = '';
+      map.setPaintProperty('{{ .Get "name"}}', 'line-width', 4);
+      map.setPaintProperty('{{ .Get "name"}}', 'line-opacity', 0.5);
+    });
+
+    //document.getElementById('{{.Get "name"}}-info').innerHTML = '<p>Distance: ' + (data[1] / 1000).toFixed(2) + 'km</p><p>Elevation: ' + data[2].toFixed(2) + 'm</p>'
+
+
+  });
+
+
+
+
+</script>
