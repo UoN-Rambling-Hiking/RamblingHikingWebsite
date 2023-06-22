@@ -1,4 +1,4 @@
-{{ $walkId := now.UnixNano }}
+{{ $walkId := now.UnixMicro }}
 
 <div class="tab-pane fade" id='pills-{{ $walkId}}' role="tabpanel" aria-labelledby='pills-{{ $walkId }}-tab' tabindex="0">
   <h2>{{ .Params.name | safeHTML }}</h2>
@@ -12,61 +12,14 @@
   tab.innerHTML = '<button class="nav-link" id="pills-{{ $walkId }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ $walkId }}" type="button" role="tab" aria-controls="pills-{{ $walkId }}" aria-selected="false">{{ .Params.name | safeHTML }}</button>'
   document.getElementById('pills-tab').appendChild(tab);
 
-  console.log('{{ .Get "os" }}')
   {{ $urlpre := "https://api.danlee.uk/ramsoc/?url="}}
   {{ $dataJ := getJSON $urlpre (.Get "os") }}
-  $.get('https://api.danlee.uk/ramsoc/?url={{ .Get "os" }}', function (data, status) {
-    map.addSource('{{ $walkId}}', {
-      'type': 'geojson',
-      'data': {
-        'type': 'Feature',
-        'properties': {},
-        'geometry': {
-          'type': 'LineString',
-          'coordinates': {{ index $dataJ 0 }}
-        }
-      }
-    });
-    map.addLayer({
-      'id': '{{ $walkId}}',
-      'type': 'line',
-      'source': '{{ $walkId}}',
-      layout: {
-        'line-cap': 'round',
-        'line-join': 'round',
+  
+  createRoute({{ $dataJ }}, {{ .Params.name | safeHTML }}, {{$walkId}}.toString());
 
-      },
-      'paint': {
-        'line-color': colors[i++],
-        'line-width': 4,
-        'line-opacity': 0.5
-      }
-    });
-    var activeRoute = null;
-    map.on('click', '{{ $walkId }}', function (e) {
-      new mapboxgl.Popup()
-        .setLngLat(e.lngLat)
-        .setHTML('<h4>{{ .Params.name | safeHTML}}</h4><p>Distance: ' + ({{ index $dataJ 1 }} / 100).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>')
-        .addTo(map);
+  document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $dataJ 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>'
 
 
-    });
-    map.on('mouseenter', '{{ $walkId}}', function () {
-      map.getCanvas().style.cursor = 'pointer';
-      map.setPaintProperty('{{ $walkId}}', 'line-width', 6);
-      map.moveLayer('{{ $walkId}}');
-      map.setPaintProperty('{{ $walkId}}', 'line-opacity', 1);
-    });
-    map.on('mouseleave', '{{ $walkId}}', function () {
-      map.getCanvas().style.cursor = '';
-      map.setPaintProperty('{{ $walkId}}', 'line-width', 4);
-      map.setPaintProperty('{{ $walkId}}', 'line-opacity', 0.5);
-    });
-
-    document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $dataJ 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>'
-
-
-  });
 
 
 
