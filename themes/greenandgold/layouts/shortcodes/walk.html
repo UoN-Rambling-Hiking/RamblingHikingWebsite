@@ -1,23 +1,36 @@
-<p>{{.Inner}}</p><hr>
+{{ $walkId := now.UnixNano }}
+
+<div class="tab-pane fade" id='pills-{{ $walkId}}' role="tabpanel" aria-labelledby='pills-{{ $walkId }}-tab' tabindex="0">
+  <h2>{{ .Params.name | safeHTML }}</h2>
+  <div id='{{ $walkId }}-info'></div>
+  <p>{{ .Inner }}</p>
+</div>
+
 <script>
+  var tab = document.createElement('li');
+  tab.className = 'nav-item';
+  tab.innerHTML = '<button class="nav-link" id="pills-{{ $walkId }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ $walkId }}" type="button" role="tab" aria-controls="pills-{{ $walkId }}" aria-selected="false">{{ .Params.name | safeHTML }}</button>'
+  document.getElementById('pills-tab').appendChild(tab);
+
   console.log('{{ .Get "os" }}')
+  {{ $urlpre := "https://api.danlee.uk/ramsoc/?url="}}
+  {{ $dataJ := getJSON $urlpre (.Get "os") }}
   $.get('https://api.danlee.uk/ramsoc/?url={{ .Get "os" }}', function (data, status) {
-    console.log(data)
-    map.addSource('{{ .Get "name"}}', {
+    map.addSource('{{ $walkId}}', {
       'type': 'geojson',
       'data': {
         'type': 'Feature',
         'properties': {},
         'geometry': {
           'type': 'LineString',
-          'coordinates': data[0]
+          'coordinates': {{ index $dataJ 0 }}
         }
       }
     });
     map.addLayer({
-      'id': '{{ .Get "name"}}',
+      'id': '{{ $walkId}}',
       'type': 'line',
-      'source': '{{ .Get "name"}}',
+      'source': '{{ $walkId}}',
       layout: {
         'line-cap': 'round',
         'line-join': 'round',
@@ -30,31 +43,30 @@
       }
     });
     var activeRoute = null;
-    map.on('click', '{{ .Get "name" }}', function (e) {
+    map.on('click', '{{ $walkId }}', function (e) {
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<h4>{{ .Get "name"}}</h4><p>Distance: ' + (data[1] / 100).toFixed(2) + 'km</p><p>Elevation: ' + data[2].toFixed(2) + 'm</p>')
+        .setHTML('<h4>{{ .Params.name | safeHTML}}</h4><p>Distance: ' + ({{ index $dataJ 1 }} / 100).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>')
         .addTo(map);
 
 
     });
-    map.on('mouseenter', '{{ .Get "name"}}', function () {
+    map.on('mouseenter', '{{ $walkId}}', function () {
       map.getCanvas().style.cursor = 'pointer';
-      map.setPaintProperty('{{ .Get "name"}}', 'line-width', 6);
-      map.moveLayer('{{ .Get "name"}}');
-      map.setPaintProperty('{{ .Get "name"}}', 'line-opacity', 1);
+      map.setPaintProperty('{{ $walkId}}', 'line-width', 6);
+      map.moveLayer('{{ $walkId}}');
+      map.setPaintProperty('{{ $walkId}}', 'line-opacity', 1);
     });
-    map.on('mouseleave', '{{ .Get "name"}}', function () {
+    map.on('mouseleave', '{{ $walkId}}', function () {
       map.getCanvas().style.cursor = '';
-      map.setPaintProperty('{{ .Get "name"}}', 'line-width', 4);
-      map.setPaintProperty('{{ .Get "name"}}', 'line-opacity', 0.5);
+      map.setPaintProperty('{{ $walkId}}', 'line-width', 4);
+      map.setPaintProperty('{{ $walkId}}', 'line-opacity', 0.5);
     });
 
-    //document.getElementById('{{.Get "name"}}-info').innerHTML = '<p>Distance: ' + (data[1] / 1000).toFixed(2) + 'km</p><p>Elevation: ' + data[2].toFixed(2) + 'm</p>'
+    document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $dataJ 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>'
 
 
   });
-
 
 
 
