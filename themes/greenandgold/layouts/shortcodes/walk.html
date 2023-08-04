@@ -1,9 +1,9 @@
 {{ $walkId := now.UnixMicro }}
 
 <div class="tab-pane fade" id='pills-{{ $walkId}}' role="tabpanel" aria-labelledby='pills-{{ $walkId }}-tab' tabindex="0">
-  <h2>{{ .Params.name | safeHTML }}</h2>
+  <h2>{{ .Params.name | safeHTML | htmlUnescape }}</h2>
   <div id='{{ $walkId }}-info'></div>
-  <p>{{ .Inner }}</p>
+  {{ .Inner  }}
 </div>
 
 <script>

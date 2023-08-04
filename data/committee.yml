@@ -2,32 +2,36 @@ members:
     - identifier: president
       title: President
       name: Dan Lee
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/dan2.jpg
     - identifier: treasurer
       title: Treasurer
       name: Amy Hooper
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Amy.jpg
     - identifier: gensec
       title: General Secretary
       name: Holly Salaman
-      image: /img/profiles/dan.jpg
+      image: /img/UoNSport_Rambling.png
     - identifier: saftey
       title: Safety Officer
       name: Maddy Flynn
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Maddy.jpg
     - identifier: ramble
       title: Ramble Secretary
       name: Fionn Mackie
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Fionn.jpg
     - identifier: social
       title: Social Secretary
       name: Hafsa Sheikh
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Hafsa.jpg
     - identifier: publicity
       title: Publicity Officer
       name: Theo Smith 
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Theo.jpg
+    - identifier: kit
+      title: Kit Secretary
+      name: Lily Sconce
+      image: /img/profiles/Lilly.jpg
     - identifier: welfare
       title: Welfare Officer
       name: Ella McLeod
-      image: /img/profiles/dan.jpg
+      image: /img/profiles/Ella.jpg
