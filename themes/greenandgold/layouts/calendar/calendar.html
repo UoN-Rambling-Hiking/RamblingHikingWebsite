@@ -1,0 +1,71 @@
+{{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<div class="container my-3">
+    <h1 class="display-4 text-center">Calendar</h1>
+    <hr>
+    <h2>Event Overview</h2>
+    <p><i>Insert GCalander iframe</i></p>
+    <h2>Subscribing To Calendar</h2>
+    <ul class="list-group list-group my-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Socials</div>
+                <pre><code id="socialCode">https://ramsoc.co.uk/socials/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#socialCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                Copy
+            </button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Walks</div>
+                <pre><code id="walkCode">https://ramsoc.co.uk/walks/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#walkCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                Copy
+            </button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Socials & Walks</div>
+                <pre><code id="bothCode">https://ramsoc.co.uk/calendar/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#bothCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                Copy
+            </button>
+        </li>
+    </ul>
+    <ol>
+        <li>Login to your calendar.</li>
+        <li>Add URL to calendar.</li>
+        <ul>
+            <li>
+                Google Calander: Click the <code>other calendars</code> down arrow. Add from URL.
+            </li>
+            <li>
+                Office 365/Outlook: Click the <code>add calendar</code> button. Select from internet
+            </li>
+        </ul>
+        <li>Copy a URL from above, ensuring it is exact.</li>
+        <ul>
+            <li>Do not download the calendar as it will not update automatically</li>
+        </ul>
+        <li>Save the calendar subscription.</li>
+        <li>Calendar will now be displayed in your chosen applicaiton.</li>
+    </ol>
+    <p>If you're struggling to add the calendar to your calendar app, ask committee at your next event</p>
+</div>
+
+<script>
+    new ClipboardJS('.btn');
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+        trigger: 'focus'
+    })
+
+
+</script>
+
+{{ end }}

@@ -6,7 +6,7 @@ LAST-MODIFIED:{{ now.Format "20060102T150405Z" }}
 CALSCALE:GREGORIAN{{ range .RegularPages }}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
-DESCRIPTION:\nMore details can be found at {{ .Permalink }}
+DESCRIPTION:More details can be found at {{ .Permalink }}
 UID:{{replace .Title " " "-" }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
