@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//ramsoc.co.uk//Ramsoc Calendar 1.0//EN
 METHOD:PUBLISH
 LAST-MODIFIED:{{ now.Format "20060102T150405Z" }}
-CALSCALE:GREGORIAN{{ range (where .Site.RegularPages "Section" "walks") }}
+CALSCALE:GREGORIAN{{ range (where .Site.RegularPages "Section" "walks") }}{{- if isset .Params "date" -}}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
@@ -19,8 +19,8 @@ DTEND:{{ dateFormat "20060102" (.Date.AddDate 0 0 1) }}
 {{- end }}
 LOCATION:{{ .Title }}
 GEO:{{ .Params.lat }};{{ .Params.lng }}
-END:VEVENT{{ end }}
-CALSCALE:GREGORIAN{{ range (where .Site.RegularPages "Section" "socials") }}
+END:VEVENT{{ end }}{{- end -}}
+{{ range (where .Site.RegularPages "Section" "socials") }}{{- if isset .Params "date" -}}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
@@ -36,5 +36,5 @@ DTEND:{{ dateFormat "20060102T150405Z" (.Date.AddDate 0 0 1) }}
 {{- end }}
 LOCATION:{{ .Title }}
 GEO:{{ .Params.lat }};{{ .Params.lng }}
-END:VEVENT{{ end }}
+END:VEVENT{{ end }}{{- end -}}
 END:VCALENDAR
