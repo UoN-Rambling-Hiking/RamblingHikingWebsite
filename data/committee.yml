@@ -2,7 +2,7 @@ members:
     - identifier: president
       title: President
       name: Dan Lee
-      image: /img/profiles/dan2.jpg
+      image: /img/profiles/Dan.jpg
     - identifier: treasurer
       title: Treasurer
       name: Amy Hooper
@@ -10,7 +10,7 @@ members:
     - identifier: gensec
       title: General Secretary
       name: Holly Salaman
-      image: /img/UoNSport_Rambling.png
+      image: /img/profiles/Holly.jpg
     - identifier: saftey
       title: Safety Officer
       name: Maddy Flynn

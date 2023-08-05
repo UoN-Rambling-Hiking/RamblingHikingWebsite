@@ -6,19 +6,13 @@ title: Frequently Asked Questions
 ---
 
 {{< accordian >}}
-{{< accordianItem title="What are the bus routes?" >}}
-For the Sunday hikes we provide transport for you to and from the location of the hike. Please see below the timings and location of the bus stops.
-- 09:00 - Tesco Extra taxi rank in Beeston
-- 09:04 - Salthouse lane bus stop (outside broadgate park)
-- 09:13 - Raleigh Park (Faraday Road Entrance)
-- 09:16 - Willoughby Avenue bus stop
-- 09:18 - University East Entrance Bus Stop (Dunkirk)
-- 09:21- East Drive Bus Stop
+{{< accordianItem title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" >}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.
 {{< /accordianItem >}}
-{{< accordianItem title="Can I join even though I am on SB?" >}}
-Yes.
+{{< accordianItem title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" >}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.
 {{< /accordianItem >}}
-{{< accordianItem title="How much does membership cost?" >}}
-Membership currently costs £20 for the 2023/2024 academic year.
+{{< accordianItem title="Lorem ipsum dolor sit amet, consectetur adipiscing elit?" >}}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.
 {{< /accordianItem >}}
 {{< /accordian >}}

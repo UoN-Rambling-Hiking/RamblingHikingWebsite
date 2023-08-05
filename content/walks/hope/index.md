@@ -3,7 +3,6 @@ title: "Hope"
 date: 2023-06-17T11:54:00-06:00
 lng: "-1.7428"
 lat: "53.3481"
-img_location: "images/bakewell.jpg"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.

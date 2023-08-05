@@ -12,11 +12,11 @@
     {{ range where .Pages "Section" "walks" }}
     new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
-    {{ if isset .Params "date" }}
-        .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a><p>{{ .Date.Format "02-01-2006" }}</p>'))
-    {{ else }}
-    .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a>'))
-    {{ end }}
+        .setPopup(new mapboxgl.Popup().setHTML('' +
+            '{{ if ne (strings.Chomp .Content) ""  }}<a href="{{ .RelPermalink }}">{{end}}' +
+            '<h6>{{ .Title }}</h6>' +
+            '{{ if ne (strings.Chomp .Content) ""  }}</a>{{end}}' +
+            '{{if isset .Params "date"}}<p>{{ .Date.Format "02-01-2006" }}</p>{{ end }}'))
         .addTo(map);
     {{ end }}
 </script>
@@ -33,7 +33,9 @@
                 {{ $existEvents = true }}
                 <div class="col pb-3">
                     <div class="text-center card hvr-grow-shadow">
+                        {{ if ne (strings.Chomp .Content) ""  }}
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                            {{end }}
                             <div>
                                 {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
                             {{ with .Fill "500x300" }}
@@ -65,7 +67,9 @@
                 {{ $existEvents = true }}
                 <div class="col pb-3">
                     <div class="text-center card hvr-grow-shadow">
+                        {{ if ne (strings.Chomp .Content) ""  }}
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
+                            {{end }}
                             <div>
                                 {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
                             {{ with .Fill "500x300" }}
@@ -81,7 +85,9 @@
                         <div class="pb-4"></div>
                         {{ end }}
                 </div>
+                            {{ if ne (strings.Chomp .Content) "" }}
                     </a>
+                        {{end}}
                     </div>
                 </div>
                 {{ end }}

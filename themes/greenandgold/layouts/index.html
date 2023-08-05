@@ -6,64 +6,72 @@
     background-position: center center;
     height: 95vh;
   ">
-  <div style="background-color: rgba(0, 0, 0, 0.5);
+    <div style="background-color: rgba(0, 0, 0, 0.5);
   height: 95vh;">
-  <div class="px-4 py-5 container hero">
-    <div class="position-absolute top-lg-25">
-    <h1 class="display-1 fw-bold text-white">Rambling & Hiking Club</h1>
-    <p class="h2 display-7 text-white">University of Nottingham Sport</p>
-    <button type="button" class="btn btn-outline-light btn-lg" onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us</button>
-    </div>
+        <div class="px-4 py-5 container hero">
+            <div class="position-absolute top-lg-25">
+                <h1 class="display-1 fw-bold text-white font-uon">Rambling & Hiking Club</h1>
+                <p class="h2 display-7 text-white font-uon">University of Nottingham Sport</p>
+                <button type="button" class="btn btn-outline-light btn-lg"
+                        onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us
+                </button>
+            </div>
+        </div>
     </div>
 </div>
-</div>
-
 
 
 <div class="container mt-5">
-  <div class="row row-cols-1 row-cols-sm-2">
-    <div class="col pb-5">
-      {{ $events := where .Site.RegularPages  "Section" "walks" }}
-      {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
-      {{ range $events}}
-      <a href="{{ .RelPermalink }}">
-      <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
-        {{ with .Resources.GetMatch "cover.*" }}
-        {{ with .Fill "500x300" }}
-        <img src="{{ .RelPermalink }}" class="img-fluid">
-        {{end}}
-        {{end}}
-        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
-          <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
-          <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+    <div class="row row-cols-1 row-cols-sm-2">
+        <div class="col pb-5">
+            {{ $events := where .Site.RegularPages "Section" "walks" }}
+            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
+            {{ range $events}}
+            {{ if ne (strings.Chomp .Content) "" }}
+            <a href="{{ .RelPermalink }}">
+                {{end}}
+                <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
+                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                    {{ with .Fill "500x300" }}
+                    <img src="{{ .RelPermalink }}" class="img-fluid">
+                    {{end}}
+                    {{end}}
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                    </div>
+                </div>
+                {{ if ne (strings.Chomp .Content) "" }}
+            </a>
+            {{end}}
         </div>
-      </div>
-    </a>
-    </div>
-    {{ end }}
-    <div class="col">
-      {{ $events := where .Site.RegularPages  "Section" "socials" }}
-      {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
-      {{ range $events}}
-      <a href="{{ .RelPermalink }}">
-      <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
-        {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
-        {{ with .Fill "500x300" }}
-        <img src="{{ .RelPermalink }}" class="img-fluid" >
-        {{end}}
-        {{end}}
-        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
-          <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
-          <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+        {{ end }}
+        <div class="col">
+            {{ $events := where .Site.RegularPages "Section" "socials" }}
+            {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
+            {{ range $events}}
+            {{ if ne (strings.Chomp .Content) "" }}
+            <a href="{{ .RelPermalink }}">
+                {{end}}
+                <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
+                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                    {{ with .Fill "500x300" }}
+                    <img src="{{ .RelPermalink }}" class="img-fluid">
+                    {{end}}
+                    {{end}}
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                    </div>
+                </div>
+                {{ if ne (strings.Chomp .Content) "" }}
+            </a>
+            {{ end }}
         </div>
-      </div>
-    </a>
-    </div>
-    {{ end }}
+        {{ end }}
     </div>
 </div>
 </div>
-
 
 
 {{ end }}
