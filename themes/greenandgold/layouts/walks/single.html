@@ -7,7 +7,11 @@
 </script>
 <div class="container my-3">
     <div class="row ">
+        {{ if isset .Params "date"}}
         <h1 class="display-4 col-md-9 col-7">{{ .Title }} | {{ .Date.Format "Mon 02 Jan 2006" }}</h1>
+        {{ else }}
+        <h1 class="display-4 col-md-9 col-7">{{ .Title }}</h1>
+        {{ end }}
         {{ if isset .Params "photo_link" }}
         <div class="col-md-1 col-2 align-self-center d-flex justify-content-center">
             <a href="{{ .Params.photo_link }}"><img src="/img/Google-Photos-logo.png" width="45"></a>

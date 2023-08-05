@@ -1,6 +1,5 @@
 ---
 title: "Edale"
-date: 2023-06-11T14:15:59-06:00
 lng: "-1.8158"
 lat: "53.3673"
 img_location: "images/bakewell.jpg"

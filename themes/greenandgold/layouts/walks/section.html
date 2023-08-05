@@ -12,7 +12,11 @@
     {{ range where .Pages "Section" "walks" }}
     new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
+    {{ if isset .Params "date" }}
         .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a><p>{{ .Date.Format "02-01-2006" }}</p>'))
+    {{ else }}
+    .setPopup(new mapboxgl.Popup().setHTML('<a href="{{ .RelPermalink }}">{{ .Title }}</a>'))
+    {{ end }}
         .addTo(map);
     {{ end }}
 </script>
@@ -56,7 +60,7 @@
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
-                {{ range (where .Pages "Section" "walks").Reverse }}
+                {{ range (where .Pages "Section" "walks") }}
                 {{ if lt .Date (time.Now)}}
                 {{ $existEvents = true }}
                 <div class="col pb-3">
@@ -71,7 +75,11 @@
                     </div>
                     <div class="card-body">
                     <h3 class="card-title text-uon-green">{{ .Title}} </h3>
+                        {{ if isset .Params "date" }}
                     <time class="card-text text-uon-green">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                        {{ else }}
+                        <div class="pb-4"></div>
+                        {{ end }}
                 </div>
                     </a>
                     </div>
