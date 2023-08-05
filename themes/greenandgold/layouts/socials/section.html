@@ -71,7 +71,11 @@
                     </div>
                     <div class="card-body">
                     <h3 class="card-title text-uon-green">{{ .Title}} </h3>
-                    <time class="card-text text-uon-green">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                        {{ if isset .Params "date" }}
+                        <time class="card-text text-uon-green">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                        {{ else }}
+                        <div class="pb-4"></div>
+                        {{ end }}
                 </div>
                     </a>
                     </div>
