@@ -9,7 +9,7 @@ title: Who we are
 
 **We explore natures playground**
 
-Welcome to RAMSOC, the University of Nottingham Rambling and Hiking Club - where adventure knows no bounds! As one of the university's largest, friendliest, and most active clubs, we're geared up to offer you an extraordinary experience each week.
+Welcome to RAMSOC, the University of Nottingham Rambling and Hiking Club - where adventure knows no bounds! As one of the university's largest, friendliest, and most active clubs, we're geared up to offer you an extraordinary experience each week. We are also one of the oldest continuous clubs at UoN, and will be celebrating 90 years in the 2023/2024 academic year!
 
 Every Sunday, we embark on an exhilarating journey to different corners of the stunning Peak District. Picture yourself surrounded by breathtaking landscapes as we delve into the heart of nature. But that's not all! We also take our passion for exploration to the next level with six unforgettable weekends away each year. From the majestic Lake District to the rugged beauty of Snowdonia and the charming Yorkshire Dales, our adventures know no boundaries!
 
