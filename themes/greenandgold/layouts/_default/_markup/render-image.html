@@ -1,1 +1,6 @@
-<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="img-fluid" />
+{{ $img := resources.GetMatch (printf "%s" .Destination) }}
+{{ $img := $img | default (resources.Get "img/fallback.png") }}
+{{ $img := $img.Resize "500x300" }}
+{{ $img := $img | fingerprint }}
+{{ $img := $img | absURL }}
+<img src="{{ $img }}" alt="{{ .Text }}" class="img-fluid" loading="lazy"/>

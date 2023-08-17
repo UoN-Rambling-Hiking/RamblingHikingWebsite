@@ -8,7 +8,7 @@
         style: 'mapbox://styles/dan-lee76/cliry1gm600nw01qv1p9f20fm', // style URL
         center: [-1.1549, 52.9545], // starting position [lng, lat]
         zoom: 11, // starting zoom
-    });
+    }).addControl(new mapboxgl.FullscreenControl()).addControl(new mapboxgl.NavigationControl()).addControl(new mapboxgl.ScaleControl());
     {{ range where .Pages "Section" "socials" }}
     new mapboxgl.Marker({ color: "#065434", })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
