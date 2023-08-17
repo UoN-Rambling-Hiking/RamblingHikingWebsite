@@ -1,4 +1,7 @@
 ---  
+menu:
+    main:
+        name: Sponsorship
 title: Sponsorship
 ---
 
