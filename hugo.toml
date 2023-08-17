@@ -22,3 +22,14 @@ buildFuture = true
     home = ["HTML"]
     section = ["HTML", "Calendar"]
     page = ["HTML"]
+
+
+  [imaging]
+    hint = 'photo'
+    quality = 75
+    resampleFilter = 'box'
+    [imaging.exif]
+        disableDate = true
+        disableLatLong = false
+        excludeFields = ''
+        includeFields = ''
