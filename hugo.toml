@@ -26,8 +26,8 @@ buildFuture = true
 
 [imaging]
   hint = 'photo'
-  quality = 75
-  resampleFilter = 'box'
+  quality = 90
+  anchor = "center"
   [imaging.exif]
     disableDate = true
     disableLatLong = false
