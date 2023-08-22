@@ -1,4 +1,4 @@
-baseURL = 'http://dev.ramsoc.co.uk/'
+baseURL = 'http://ramsocdev.danlee.uk/'
 languageCode = 'en-us'
 title = 'Rambling & Hiking'
 
@@ -23,13 +23,13 @@ buildFuture = true
     section = ["HTML", "Calendar"]
     page = ["HTML"]
 
-  [imaging]
-    hint = 'photo'
-    quality = 75
-    resampleFilter = 'box'
-    [imaging.exif]
-        disableDate = true
-        disableLatLong = false
-        excludeFields = ''
-        includeFields = ''
 
+[imaging]
+  hint = 'photo'
+  quality = 75
+  resampleFilter = 'box'
+  [imaging.exif]
+    disableDate = true
+    disableLatLong = false
+    excludeFields = ''
+    includeFields = ''
