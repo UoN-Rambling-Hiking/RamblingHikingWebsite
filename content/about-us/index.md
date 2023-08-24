@@ -19,4 +19,4 @@ Escape the pressures of university life and immerse yourself in the great outdoo
 
 So, if you're seeking unforgettable adventures, lasting friendships (possibly relationships), and a chance to explore the world around you, look no further. Click the button to the right and join RAMSOC on an extraordinary journey of discovery, growth, and the thrill of the great outdoors!
 
-![group of people in hiking gear](./DSC01895.jpg)
+![group of people in hiking gear](DSC01895.jpg)
