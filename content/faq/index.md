@@ -19,6 +19,6 @@ For the Sunday hikes we provide transport for you to and from the location of th
 Yes, of course! You'll have to catch the first hopper bus, as this will get into park campus just before we leave. There are a few SB students who attend our events, with some of them driving. So pop us an email, or message us on social media and we can point you in the right direction!
 {{< /accordianItem >}}
 {{< accordianItem title="How can you justify these prices?" >}}
-We charge each member a £20 fee. This helps us cover the cost of kit, and help subsidise some of the events. Prices for walks are set based on the cost of travel.
+We charge each member a £20 fee. This helps us cover the cost of kit, and help subsidise some of the events. Prices for walks are set based on the cost of travel, with the average walk for members costing £13 and £18 for non-members.
 {{< /accordianItem >}}
 {{< /accordian >}}
