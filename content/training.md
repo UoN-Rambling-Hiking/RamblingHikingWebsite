@@ -60,3 +60,6 @@ Places are limited on this course as a very large training group would lower the
 - Full practice day where everyone has a chance to lead. Other trainees act out scenarios for the current leader to deal with.
 
 It must be stressed that the training alone will not automatically make people grade 3. After liaising with the course organisers, it is at the rambling secretary's and the safety officer's discretion who meets grade 3 leader standards. No-one will be allowed or expected to lead a grade 3 walk alone straight after such a training course. Trainees will be given the opportunity to lead a grade 3 walk under the supervision of the more experienced members until they have gained enough experience and skills to lead alone.
+
+## First Aid
+First aiders play a vital role in ensuring the safety and well-being of our club members. While we all cherish the thrill of outdoor adventures, accidents can happen, and being prepared can make all the difference. To empower our members with this crucial skillset, we offer the opportunity to complete a Level 2 [REC Outdoor First Aid Course](https://recfirstaid.net/course&course_id=6). This is subsidised by the club, and is normally run a the start of semester 2.

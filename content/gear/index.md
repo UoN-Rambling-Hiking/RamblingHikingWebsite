@@ -6,12 +6,37 @@ menu:
 title: General Kit
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Semper viverra nam libero justo laoreet. Feugiat vivamus at augue eget arcu dictum varius duis at. In vitae turpis massa sed. Sit amet volutpat consequat mauris nunc congue nisi. Egestas quis ipsum suspendisse ultrices. Nulla at volutpat diam ut venenatis tellus. Congue mauris rhoncus aenean vel elit scelerisque. Quam quisque id diam vel quam elementum pulvinar etiam non. Adipiscing at in tellus integer feugiat scelerisque varius morbi enim. Commodo elit at imperdiet dui. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+*Quick Links*
+- [Sunday Hike Essentials](#sunday-hike-essentials)
+- [Purchasing Kit](#purchasing-kit)
+  - [Member Deals](#member-deals)
+  - [General Sites](#general-sites)
+- [Opportunities Fund](#opportunities-fund)
 
-Facilisis mauris sit amet massa vitae tortor. Nibh tortor id aliquet lectus. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Pulvinar mattis nunc sed blandit libero volutpat. Quam quisque id diam vel quam. Ut faucibus pulvinar elementum integer enim neque. Consectetur purus ut faucibus pulvinar elementum integer enim. Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Placerat vestibulum lectus mauris ultrices eros in cursus. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Cras tincidunt lobortis feugiat vivamus at augue eget. Ut lectus arcu bibendum at varius. Interdum posuere lorem ipsum dolor sit. Ullamcorper morbi tincidunt ornare massa.
+Having the right kit is the most important requirement when attending our events. If you turn up to a hike with the wrong kit and leaders deem your gear inappropriate, you will be unable to participate and regrettably cannot be refunded. As stated by our [Hikers Operating Procedures](/hop). 
+## Sunday Hike Essentials
+- Walking Boots - **NOT TRAINERS** - Walking boots are touch soles, ankle support and some level of waterproofing. 
+- Suitable trousers for walking - **NOT JEANS**
+- 2L of Water (3L on long or hot days)
+- Backpack (20-30 litres is ideal)
+- Waterproof Coat 
+- Lunch and snacks
+- Warm Layers - Especially during our colder months. (Don't forget those hats and gloves)
 
-Quam id leo in vitae. Auctor urna nunc id cursus metus aliquam eleifend. Quam lacus suspendisse faucibus interdum posuere. Non consectetur a erat nam at lectus. Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Interdum velit euismod in pellentesque massa placerat duis. Magna fringilla urna porttitor rhoncus. Erat nam at lectus urna duis convallis. Urna porttitor rhoncus dolor purus non enim praesent. Diam donec adipiscing tristique risus nec feugiat in. Varius duis at consectetur lorem donec massa sapien. Ultrices in iaculis nunc sed augue. Nunc mi ipsum faucibus vitae. Lectus proin nibh nisl condimentum id. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Blandit massa enim nec dui nunc mattis enim.
+## Purchasing Kit
+Leaders and Committee would be more than happy to help recommended kit and where to purchase. There's plenty of stores locally and online. With most having discount!
+### Member Deals
+Becoming a member allows you to attend events, and at a reduced rate. Not only that, you can access some sweet discount at these retailers with your membership card, or through our [Members Portal](member.ramsoc.co.uk).
+- [Magic Mountain](https://www.magic-mountain.co.uk/) - **15% Member Discount**
+- [Mountain Warehouse](https://www.mountainwarehouse.com/) - **15% Member Discount**
+- [Trespass](https://www.trespass.com/) - **20% Member Discount** 244 Victoria Centre, Nottingham NG1 3QE
+### General Sites
+- [Decathlon](https://www.decathlon.co.uk/) - East, Giltbrook Retail Park, Giltbrook, Nottingham NG16 2RP
+- JD Group - All with **15% Student Discount**
+	- [Blacks](https://www.blacks.co.uk/) - 12 Exchange Walk, Nottingham NG1 2NX
+	- [GO Outdoors](https://www.gooutdoors.co.uk/) - 8-10 Mansfield Rd, Daybrook, Nottingham NG5 6BP
+	- [Millets](https://www.millets.co.uk/)
+- [Cotswold Outdoor](https://www.cotswoldoutdoor.com/) -  **10% Student Discount** | Castle Buildings, Castle Blvd, Nottingham NG7 1SA
 
-Elementum sagittis vitae et leo duis ut diam quam. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Vulputate odio ut enim blandit volutpat maecenas. Et malesuada fames ac turpis egestas. Arcu bibendum at varius vel pharetra vel. Eget felis eget nunc lobortis. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Scelerisque in dictum non consectetur a erat nam. Lacus luctus accumsan tortor posuere ac ut consequat. Tortor posuere ac ut consequat semper viverra. Feugiat in ante metus dictum at tempor. Vitae turpis massa sed elementum tempus egestas. Elit pellentesque habitant morbi tristique senectus. Enim nunc faucibus a pellentesque sit amet. At consectetur lorem donec massa sapien faucibus et molestie ac. Ullamcorper velit sed ullamcorper morbi tincidunt. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Aenean sed adipiscing diam donec. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nibh praesent tristique magna sit.
-
-Vulputate dignissim suspendisse in est ante in nibh. Platea dictumst quisque sagittis purus sit. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc sed augue lacus viverra. Vel pretium lectus quam id leo in vitae turpis. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Tempus egestas sed sed risus pretium quam vulputate. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Sem integer vitae justo eget magna fermentum iaculis. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. At urna condimentum mattis pellentesque id nibh tortor. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Massa tincidunt dui ut ornare lectus sit amet est placerat. Commodo ullamcorper a lacus vestibulum. Arcu odio ut sem nulla pharetra. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sapien faucibus et molestie ac feugiat sed lectus. Suscipit adipiscing bibendum est ultricies.
+## Opportunities Fund
+As part of the cost of living crisis, the students union is giving eligible students **£200** to spend towards club kit and fees each academic year. Find out more by visiting their [cost of living support](https://su.nottingham.ac.uk/activities/opportunities-fund)
