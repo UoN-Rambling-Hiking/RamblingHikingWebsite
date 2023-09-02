@@ -19,7 +19,7 @@ For the Sunday hikes we provide transport for you to and from the location of th
 9. 09:26 - [Spray.Unable.Rental](https://what3words.com/spray.unable.rental) | University East Entrance Bus Stop (Dunkirk) 
 10. 09:28 - [Focus.Giving.Ranked](https://what3words.com/focus.giving.ranked) | East Drive Bus Stop
 
-![busroute](bus_route.jpg)
+{{< busImage destination="/img/bus_route.jpg" text="bus route" >}}
 {{< /accordianItem >}}
 {{< accordianItem title="Can I join even though I am on Sutton Bonington?" >}}
 Yes, of course! You'll have to catch the first hopper bus, as this will get into park campus just before we leave. There are a few SB students who attend our events, with some of them driving. So pop us an email, or message us on social media and we can point you in the right direction!
