@@ -35,3 +35,7 @@ members:
       title: Welfare Officer
       name: Ella McLeod
       image: /img/profiles/Ella-min.jpg
+    - identifier: vicepresident
+      title: Vice President
+      name: Rammy
+      image: /img/profiles/rammy.jpeg
