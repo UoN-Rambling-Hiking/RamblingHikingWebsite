@@ -76,15 +76,15 @@
     <div class="ratio ratio-16x9 mx-md-0">
         <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
     </div>
-    <div class="row row-cols-1 my-2 text-center row-cols-sm-3">
+    <div class="row row-cols-1 my-2 text-center row-cols-sm-3 ">
         <div class="col p-sm-1 p-2">
             {{ with or (resources.Get "/img/landing/landing1.jpg") (resources.Get "/img/fallback.png") }}
             {{ with .Fill "500x300" }}
             <img src="{{ .RelPermalink }}" class="img-fluid">
             {{end}}
             {{end}}
-            <a class="btn btn-uongreen mt-3 w-50" href="/gear">
-                <h5>Required Gear</h5>
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/gear">
+                Required Gear
             </a>
         </div>
         <div class="col p-sm-1 p-2">
@@ -93,8 +93,8 @@
             <img src="{{ .RelPermalink }}" class="img-fluid">
             {{end}}
             {{end}}
-            <a class="btn btn-uongreen mt-3 w-50" href="/calendar">
-                <h5>Calendar</h5>
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/calendar">
+                Calendar
             </a>
         </div>
         <div class="col p-sm-1 p-2">
@@ -103,8 +103,8 @@
             <img src="{{ .RelPermalink }}" class="img-fluid">
             {{end}}
             {{end}}
-            <a class="btn btn-uongreen mt-3 w-50 " href="/faw">
-                <h5>F&Q</h5>
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/faq">
+                F&Q
             </a>
         </div>
     </div>
