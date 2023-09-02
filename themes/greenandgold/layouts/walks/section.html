@@ -1,6 +1,8 @@
 {{ define "main" }}
 
 <div id='map' style='width: 100%; height: 300px;'></div>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
     const map = new mapboxgl.Map({
@@ -23,7 +25,8 @@
 <div class="container my-3">
     <h1 class="display-4 text-center">Walks</h1>
     <hr>
-
+        <p>We aim to keep our walks up to date and accurate, however, there is no guarantee the locations/walks will be available on the day of travel.</p>
+    <a href="#past" class="text-uon-green fw-bold">Jump to past walks</a>
         <h2>Upcoming walks</h2>
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
@@ -58,7 +61,7 @@
             </div>
         </div>
 
-        <h2>Past walks</h2>
+        <h2 id="past">Past walks</h2>
         <div>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 {{ $existEvents := false }}
