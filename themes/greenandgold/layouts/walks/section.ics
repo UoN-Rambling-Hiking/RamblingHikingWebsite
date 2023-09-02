@@ -13,7 +13,8 @@ STATUS:CONFIRMED
 DTSTAMP:{{dateFormat "20060102T150405Z" .Date}}
 DTSTART:{{ dateFormat "20060102" .Date }}
 {{ if isset .Params "end_date" -}}
-DTEND:{{ dateFormat "20060102" .Params.end_date }}
+{{ $d := .Params.end_date | time.AsTime }}
+DTEND:{{ dateFormat "20060102" ($d.AddDate 0 0 1) }}
 {{- else -}}
 DTEND:{{ dateFormat "20060102" (.Date.AddDate 0 0 1) }}
 {{- end }}

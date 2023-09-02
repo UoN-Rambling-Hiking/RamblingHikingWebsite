@@ -20,13 +20,14 @@
     </div>
 </div>
 
-
+<h2 class="display-2 text-center font-uon text-uon-gold my-3 fw-bold">Participation Club of the Year</h2>
+<h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
 <div class="container mt-5">
     <div class="row row-cols-1 row-cols-sm-2">
-        <div class="col pb-5">
             {{ $events := where .Site.RegularPages "Section" "walks" }}
             {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
             {{ range $events}}
+        <div class="col pb-5">
             {{ if ne (strings.Chomp .Content) "" }}
             <a href="{{ .RelPermalink }}">
                 {{end}}
@@ -46,10 +47,10 @@
             {{end}}
         </div>
         {{ end }}
-        <div class="col">
             {{ $events := where .Site.RegularPages "Section" "socials" }}
             {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
             {{ range $events}}
+        <div class="col">
             {{ if ne (strings.Chomp .Content) "" }}
             <a href="{{ .RelPermalink }}">
                 {{end}}
@@ -70,7 +71,70 @@
         </div>
         {{ end }}
     </div>
-</div>
+
+    <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What you can expect</h2>
+    <div class="ratio ratio-16x9 mx-md-0">
+        <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
+    </div>
+    <div class="row row-cols-1 my-2 text-center row-cols-sm-3 ">
+        <div class="col p-sm-1 p-2">
+            {{ with or (resources.Get "/img/landing/landing1.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/gear">
+                Required Gear
+            </a>
+        </div>
+        <div class="col p-sm-1 p-2">
+            {{ with or (resources.Get "/img/landing/landing2.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/calendar">
+                Calendar
+            </a>
+        </div>
+        <div class="col p-sm-1 p-2">
+            {{ with or (resources.Get "/img/landing/landing3.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/faq">
+                F&Q
+            </a>
+        </div>
+    </div>
+    <div class="row row-cols-3 my-1">
+        <div class="col p-1">
+            {{ with or (resources.Get "/img/landing/landing4.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+        </div>
+        <div class="col p-1">
+            {{ with or (resources.Get "/img/landing/landing5.jpeg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+        </div>
+        <div class="col p-1">
+            {{ with or (resources.Get "/img/landing/landing6.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x300" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid">
+            {{end}}
+            {{end}}
+        </div>
+
+    </div>
+    <div class="text-center fst-italic pt-4">
+        <p>This site is new and any feedback would be greatly appreciated! <strong>webfeedback@ramsoc.co.uk</strong></p>
+    </div>
 </div>
 
 
