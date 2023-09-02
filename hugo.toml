@@ -5,7 +5,7 @@ DefaultContentLanguage = "en"
 theme = "greenandgold"
 buildFuture = true
 googleAnalytics = 'G-9JLNQSX5RH'
-
+assetDir = "static"
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
