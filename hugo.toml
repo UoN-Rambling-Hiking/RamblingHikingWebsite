@@ -17,6 +17,7 @@ canonifyURLs = true
   sitename = "Rambling & Hiking"
   description = 'The University of Nottingham Rambling & Hiking Club. We run weekly walks, socials and trips away.'
   title = 'Rambling & Hiking'
+  images = ['img/banner.jpg']
 
 [taxonomies]
   series = 'series'
