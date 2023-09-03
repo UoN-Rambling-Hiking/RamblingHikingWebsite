@@ -10,6 +10,9 @@ The website core dependencies are:
  * [Hugo](https://gohugo.io)
  * [Github Pages](https://pages.github.com)
 
+## Deployment
+GitHub Pages automatically redeploy the website at 22:00 every day.
+
 ## Contributing
 Contributions are welcome for both updating our Calendar and improving the website.
 
