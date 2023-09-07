@@ -51,7 +51,7 @@ function createRoute(data, title, walkId) {
         map.on('click', walkId, function (e) {
             new mapboxgl.Popup()
                 .setLngLat(e.lngLat)
-                .setHTML('<h4>' + title + '</h4><p>Distance: ' + (data[1] / 100).toFixed(2) + 'km</p><p>Elevation: ' + (data[2]).toFixed(2) + 'm</p>')
+                .setHTML('<h4>' + title + '</h4><p>Distance: ' + (data[1] / 1000).toFixed(2) + 'km</p><p>Elevation: ' + (data[2]).toFixed(2) + 'm</p>')
                 .addTo(map);
         });
 
