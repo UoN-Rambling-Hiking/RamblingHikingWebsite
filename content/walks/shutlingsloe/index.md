@@ -1,8 +1,8 @@
 ---
 title: "Shutlingsloe"
 date: 2023-09-23T11:54:00-06:00
-lng: "-2.0367"
-lat: "53.2232"
+lng: "-2.06778"
+lat: "53.26067"
 ---
 
 
@@ -26,7 +26,7 @@ members who have competently completed a walk 4 in the past.
 {{< /generalInfo >}}
 
 {{% walk name="Walk 1" os="https://explore.osmaps.com/route/17000436/shutlingsloe-walk-1--september-2023-fionn" %}}
-## Tegg’s Nose and Macclesfield Forest
+## Tegg’s Nose andwalk Macclesfield Forest
 
 Walk 1 begins at Walker Barn (SJ 955 737). Follow Buxton Old
 Road for 750m until it reaches Tegg’s Nose Country Park Car Park,
@@ -52,7 +52,7 @@ cross the A54 and finish the walk at the Rose & Crown Inn,
 Allgreave (SJ 973 669).
 {{% /walk %}}
 
-{{< walk name="Walk 2" os="https://explore.osmaps.com/route/17001097/shutlingsloe-walk-2--september-2023-fionn">}}
+{{% walk name="Walk 2" os="https://explore.osmaps.com/route/17001097/shutlingsloe-walk-2--september-2023-fionn"%}}
 ## Macclesfield Forest and Shutlingsloe
 
 Walk 2 begins at Walker Barn (SJ 955 737). Follow Crookedyard
@@ -76,9 +76,9 @@ reaches the road. Bear right until the route reaches a footbridge on
 the left, cross it and follow the footpath along Clough Brook. Follow
 the footpath as it veers left up a hill. Safely cross the A54 and finish
 the walk at the Rose & Crown Inn, Allgreave (SJ 973 669).
-{{< /walk >}}
+{{% /walk %}}
 
-{{< walk name="Walk 3" os="https://explore.osmaps.com/route/17001629/shutlingsloe-walk-3--september-2023-fionn">}}
+{{% walk name="Walk 3" os="https://explore.osmaps.com/route/17001629/shutlingsloe-walk-3--september-2023-fionn"%}}
 ## Tegg’s Nose, Macclesfield Forest and Shutlingsloe (Shorter)
 
 Walk 3 begins at Walker Barn (SJ 955 737). Follow Buxton Old
@@ -108,9 +108,9 @@ the route reaches a footbridge on the left, cross it and follow the
 footpath along Clough Brook. Follow the footpath as it veers left up
 a hill. Safely cross the A54 and finish the walk at the Rose & Crown
 Inn, Allgreave (SJ 973 669).
-{{< /walk >}}
+{{% /walk %}}
 
-{{< walk name="Walk 4" os="https://explore.osmaps.com/route/17001802/shutlingsloe-walk-4--september-2023-fionn">}}
+{{% walk name="Walk 4" os="https://explore.osmaps.com/route/17001802/shutlingsloe-walk-4--september-2023-fionn"%}}
 ## Tegg’s Nose Macclesfield Forest and Shutlingsloe (Longer)
 
 Walk 4 begins at Walker Barn (SJ 955 737). Follow Buxton Old
@@ -141,9 +141,9 @@ reaches a footbridge on the left, cross it and follow the footpath
 along Clough Brook. Follow the footpath as it veers left up a hill.
 Safely cross the A54 and finish the walk at the Rose & Crown Inn,
 Allgreave (SJ 973 669).
-{{< /walk >}}
+{{% /walk %}}
 
-{{< walk name="Walk 5" os="https://explore.osmaps.com/route/17001966/shutlingsloe-walk-5--september-2023-fionn">}}
+{{% walk name="Walk 5" os="https://explore.osmaps.com/route/17001966/shutlingsloe-walk-5--september-2023-fionn"%}}
 ## Macclesfield Forest, Shutlingsloe and Three Shires Head
 
 Walk 5 begins at Walker Barn (SJ 955 737). Follow Charity Lane for
@@ -172,7 +172,7 @@ route reaches a footbridge on the left, cross it and follow the
 footpath along Clough Brook. Follow the footpath as it veers left up
 a hill. Safely cross the A54 and finish the walk at the Rose & Crown
 Inn, Allgreave (SJ 973 669).
-{{< /walk >}}
+{{% /walk %}}
 
 {{< /walks >}}
 
