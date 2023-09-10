@@ -1,7 +1,7 @@
 ---  
 menu:
     main:
-        name: F&Q
+        name: FAQ
 title: Frequently Asked Questions
 ---
 
