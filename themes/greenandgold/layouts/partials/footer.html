@@ -14,18 +14,69 @@
     </symbol>
   </svg>
 
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary">&copy; {{ now.Format "2006"}} The University of Nottingham Rambling & Hiking Club. Maps &copy; <a class="text-uon-green" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+<div class="container py-5">
+    <footer class="py-4 border-top">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-uon-green">Pages</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="/gear" class="nav-link p-0 text-body-secondary">Gear</a></li>
+                    <li class="nav-item mb-2"><a href="/hop" class="nav-link p-0 text-body-secondary">HOP</a></li>
+                    <li class="nav-item mb-2"><a href="/faq" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="https://member.ramsoc.co.uk" class="nav-link p-0 text-body-secondary text-uon-gold">Members Area</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <a href="/walks" class="nav-link"><h5 class="text-uon-green">Walks</h5></a>
+                <ul class="nav flex-column">
+                    {{ $events := where .Site.RegularPages "Section" "walks" }}
+                    {{ $events := $events | intersect (where $events "Date" "ge" now) | last 5 }}
+                    {{ range sort $events "Date" "asc" }}
+                    <li class="nav-item mb-2 p-0 text-body-secondary">
+                        {{ if ne (strings.Chomp .Content) "" }}
+                        <a href="{{ .RelPermalink }}" class="nav-link p-0 text-body-secondary">
+                            {{end }}
+                            {{ .Title }}
+                            {{ if ne (strings.Chomp .Content) "" }}
+                            </a>
+                        {{ end }}
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <a href="/socials" class="nav-link"><h5 class="text-uon-green nav-item">Socials</h5></a>
+                <ul class="nav flex-column">
+                    {{ $events := where .Site.RegularPages "Section" "socials" }}
+                    {{ $events := $events | intersect (where $events "Date" "ge" now) | last 5 }}
+                    {{ range sort $events "Date" "asc" }}
+                    <li class="nav-item mb-2 p-0 text-body-secondary">
+                        {{ if ne (strings.Chomp .Content) "" }}
+                        <a href="{{ .RelPermalink }}" class="nav-link p-0 text-body-secondary">
+                            {{end }}
+                            {{ .Title }}
+                            {{ if ne (strings.Chomp .Content) "" }}
+                        </a>
+                        {{ end }}
+                    </li>
+                    {{end}}
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between ">
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; {{ now.Format "2006"}} The University of Nottingham Rambling & Hiking Club. Maps &copy; <a class="text-uon-green" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
         <br>
             Website by <a class="text-uon-green" href="https://danlee.uk">Dan Lee</a> and <a class="text-uon-green" href="https://github.com/UoN-Rambling-Hiking">contributors</a></span>
-      </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Rambling_Hiking"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/uon_rambling_hiking/"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://facebook.com/groups/uonramblinghiking23/"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Rambling_Hiking"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/uon_rambling_hiking/"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://facebook.com/groups/uonramblinghiking23/"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+        </div>
     </footer>
   </div>

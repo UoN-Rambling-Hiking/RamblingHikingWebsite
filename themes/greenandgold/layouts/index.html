@@ -48,7 +48,7 @@
         </div>
         {{ end }}
             {{ $events := where .Site.RegularPages "Section" "socials" }}
-            {{ $events := $events | intersect (where $events "Date" "ge" now) | first 1 }}
+            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
             {{ range $events}}
         <div class="col">
             {{ if ne (strings.Chomp .Content) "" }}
