@@ -34,7 +34,7 @@
                         <a href="{{ .RelPermalink }}" class="text-decoration-none">
                             <div>
                                 {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
-                            {{ with .Fit "500x300" }}
+                            {{ with .Fill "500x300" }}
                         <img class="card-img-top img-fluid" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                         {{ end }}
                         {{ end }}
