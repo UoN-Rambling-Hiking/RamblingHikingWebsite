@@ -21,6 +21,13 @@
     }
 
 }
+.nav {
+    .nav-item {
+        .nav-link:hover, .nav-link.active {
+            color: var(--uon-sport-gold) !important;
+        }
+    }
+}
 
 .nav-pills{
     .nav-link{
