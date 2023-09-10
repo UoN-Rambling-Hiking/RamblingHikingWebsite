@@ -42,10 +42,8 @@ reaches the lane. Follow the lane south for 1.25km until it reaches a
 T-junction, turn left. At the Hanging Gate Inn (SJ 952 696) turn left
 down the footpath and follow it for 1.75km, passing Oakenclough
 House, until you reach Greenway Bridge. Turn left down Nabbs
-
 Road and follow it for 1.25km until the route turns right at the T-
 junction. After the road crosses the river, turn left and cross the
-
 footbridge and immediately turn right. Follow the footpath as it
 veers left up a hill, and continue straight as it joins a track. Safely
 cross the A54 and finish the walk at the Rose & Crown Inn,
