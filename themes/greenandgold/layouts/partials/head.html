@@ -17,4 +17,6 @@
     {{ template "_internal/twitter_cards.html" .}}
     {{ partial "seo/other.html" .}}
     <title>{{ $title }}</title>
+    <meta name="description" content="{{ .Params.description }}" />
+    <meta itemprop="description" content="{{ .Params.description }}" />
 </head>
