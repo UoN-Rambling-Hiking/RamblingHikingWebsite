@@ -2,32 +2,40 @@ members:
     - identifier: president
       title: President
       name: Dan Lee
-      image: /img/comittee/pres.jpg
+      image: /img/profiles/Dan-min.jpg
     - identifier: treasurer
       title: Treasurer
-      name: Amy Hooper
-      image: /img/comittee/
+      name: Amy Hopper
+      image: /img/profiles/Amy-min.jpg
     - identifier: gensec
       title: General Secretary
-      name: Holly 
-      image: /img/comittee/
+      name: Holly Salaman
+      image: /img/profiles/Holly-min.jpg
     - identifier: saftey
       title: Safety Officer
-      name: Maddy 
-      image: /img/comittee/
+      name: Maddy Flynn
+      image: /img/profiles/Maddy-min.jpg
     - identifier: ramble
       title: Ramble Secretary
       name: Fionn Mackie
-      image: /img/comittee/
+      image: /img/profiles/Fionn-min.jpg
     - identifier: social
       title: Social Secretary
-      name: Hafsa 
-      image: /img/comittee/
+      name: Hafsa Sheikh
+      image: /img/profiles/Hafsa-min.jpg
     - identifier: publicity
       title: Publicity Officer
       name: Theo Smith 
-      image: /img/comittee/
+      image: /img/profiles/Theo-min.jpg
+    - identifier: kit
+      title: Kit Secretary
+      name: Lily Sconce
+      image: /img/profiles/Lilly-min.jpg
     - identifier: welfare
       title: Welfare Officer
-      name: Ella  
-      image: /img/comittee/
+      name: Ella McLeod
+      image: /img/profiles/Ella-min.jpg
+    - identifier: vicepresident
+      title: Vice President
+      name: Rammy
+      image: /img/profiles/rammy.jpeg

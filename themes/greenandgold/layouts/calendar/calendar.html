@@ -1,0 +1,73 @@
+{{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<div class="container my-3">
+    <h1 class="display-4 text-center">Calendar</h1>
+    <hr>
+    <h2>Event Overview</h2>
+    <div class="ratio ratio-4x3">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23065434&ctz=Europe%2FLondon&showTitle=1&showNav=1&showDate=1&showPrint=0&showTabs=1&hl=en_GB&title=Rambling%20%26%20Hiking%20Calendar&src=ZjllZWZoYmxyNmhsbmVsbjFwdHU4NWpqaHY2c3ViY2FAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23616161" style="border:solid 1px #777"></iframe>
+    </div>
+        <h2>Subscribing To Calendar</h2>
+    <ul class="list-group list-group my-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Socials</div>
+                <pre><code id="socialCode" class="text-wrap text-break">https://ramsoc.co.uk/socials/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#socialCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Walks</div>
+                <pre><code id="walkCode" class="text-wrap text-break">https://ramsoc.co.uk/walks/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#walkCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Socials & Walks</div>
+                <pre><code id="bothCode" class="text-wrap text-break">https://ramsoc.co.uk/calendar/index.ics</code></pre>
+            </div>
+            <button class="btn btn-uongreen btn-sm" data-clipboard-target="#bothCode" data-bs-toggle="popover" data-bs-content="Copied" data-bs-trigger="focus">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </li>
+    </ul>
+    <ol>
+        <li>Login to your calendar.</li>
+        <li>Add URL to calendar.</li>
+        <ul>
+            <li>
+                Google Calander: Click the <code>other calendars</code> down arrow. Add from URL.
+            </li>
+            <li>
+                Office 365/Outlook: Click the <code>add calendar</code> button. Select from internet
+            </li>
+        </ul>
+        <li>Copy a URL from above, ensuring it is exact.</li>
+        <ul>
+            <li>Do not download the calendar as it will not update automatically</li>
+        </ul>
+        <li>Save the calendar subscription.</li>
+        <li>Calendar will now be displayed in your chosen applicaiton.</li>
+    </ol>
+    <p>If you're struggling to add the calendar to your calendar app, ask committee at your next event</p>
+</div>
+
+<script>
+    new ClipboardJS('.btn');
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+        trigger: 'focus'
+    })
+
+
+</script>
+
+{{ end }}

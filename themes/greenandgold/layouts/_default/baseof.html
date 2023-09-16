@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div id="content" class="min-vh-100">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}

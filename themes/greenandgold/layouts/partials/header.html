@@ -1,21 +1,45 @@
 <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Rambling & Hiking</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid d-lg-flex">
+          <a class="navbar-brand col-lg-3 me-0 text-decoration-none text-uon-gold font-uon" href="https://ramsocdev.danlee.uk">
+            <img class="navbar-brand d-inline-block p-1" src="/img/UoNSport_Gold.png" width="45">
+            <span>Rambling & Hiking</span>
+          </a>
+
+          <button class="navbar-toggler border-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <div class="collapse navbar-collapse d-lg-flex col-9" id="navbarSupportedContent">
+            <ul class="navbar-nav col-lg-8 justify-content-lg-center">
+              {{ $page := .Page }}
               {{ range .Site.Menus.main }}
+              {{ $is := $page.IsMenuCurrent "main" . }}
+              {{ $has := $page.HasMenuCurrent "main" . }}
+              {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle {{if $has}} active {{end}}" href="#" id="navbarDropdown{{ .Name }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  {{ .Name }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .Name }}">
+                  {{ range .Children }}
+                  <li><a class="dropdown-item {{if $is}} active {{end}}" href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ else }}
               <li class="nav-item">
                 {{ $text := print .Name | safeHTML }}
-                <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+                {{/* (and (eq $page.Name "Rambling & Hiking") (eq .Name "Home")) <-- Used if _index.md is not used for homepage*/}}
+                <a class='nav-link {{if $is }} active {{end}}' href="{{ .URL }}">{{ $text }}</a>
               </li>
               {{ end }}
+              {{ end }}
             </ul>
-            <button type="button" class="btn btn-outline-primary" onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us</button>
+            <div class="d-lg-flex col-lg-4 justify-content-lg-end">
+            <button type="button" class="btn btn-outline-light btn-md" onclick="location.href='https://su.nottingham.ac.uk/activities/view/rambling-hiking';">Join Us</button>
+          </div>
           </div>
         </div>
       </nav>
+
 </div>

@@ -11,8 +11,8 @@ features = []
 min_version = "0.112.5"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Dan Lee"
+  homepage = "danlee.uk"
 
 # If porting an existing theme
 [original]
