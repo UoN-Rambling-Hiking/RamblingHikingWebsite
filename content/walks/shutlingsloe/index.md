@@ -4,6 +4,7 @@ date: 2023-09-23T11:54:00-06:00
 lng: "-2.06778"
 lat: "53.26067"
 ticket_link: "https://su.nottingham.ac.uk/events/id/5057-shutlingsloe-saturday-walk"
+photo_link: "https://photos.app.goo.gl/tecE1YbcxnY2K3HCA"
 ---
 
 

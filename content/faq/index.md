@@ -28,4 +28,10 @@ Yes, of course! You'll have to catch the first hopper bus, as this will get into
 {{< accordianItem title="How can you justify these prices?" >}}
 We charge each member a £20 fee. This helps us cover the cost of kit, and help subsidise some of the events. Prices for walks are set based on the cost of travel, with the average walk for members costing £13 and £18 for non-members.
 {{< /accordianItem >}}
+{{< accordianItem title="Where can I get information about socials?" >}}
+Socials will be advertised on the webiste, but with more information and a *Im Going* list on our [Facebook page](https://www.facebook.com/groups/uonramblinghiking23).
+{{< /accordianItem >}}
+{{< accordianItem title="I have a question, how do I contact you?" >}}
+If you have any questions or concerns, the easiest and quickest way is on our [Instagram page](https://www.instagram.com/uon_rambling_hiking/).
+{{< /accordianItem >}}
 {{< /accordian >}}

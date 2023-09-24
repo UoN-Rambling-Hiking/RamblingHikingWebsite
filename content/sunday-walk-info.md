@@ -15,6 +15,7 @@ More information can be found on the [gear page](/gear)
 
 ## Cost
 Members: £13
+
 Non-members: £18
 
 ## Where to meet us
