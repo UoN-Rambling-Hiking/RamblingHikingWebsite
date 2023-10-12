@@ -4,7 +4,7 @@ date: 2023-10-01T11:54:00-06:00
 lng: "-1.7833"
 lat: "53.0667"
 ticket_link: "https://su.nottingham.ac.uk/events/id/5179-just-play-dovedale-walk"
-photo_link: "https://photos.app.goo.gl/v3r5FPiGjt7MJEEQ9"
+photo_link: "https://photos.app.goo.gl/4Z1ui7ArXhLSPkNZA"
 ---
 
 
