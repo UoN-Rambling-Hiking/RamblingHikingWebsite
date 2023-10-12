@@ -28,6 +28,7 @@ Leaders and Committee would be more than happy to help recommended kit and where
 ### Member Deals
 Becoming a member allows you to attend events, and at a reduced rate. Not only that, you can access some sweet discount at these retailers with your membership card, or through our [Members Portal](https://member.ramsoc.co.uk).
 - [Magic Mountain](https://www.magic-mountain.co.uk/) - **15% Member Discount**
+- [Montane](https://montane.com/) - **15% Member Discount**
 - [Mountain Warehouse](https://www.mountainwarehouse.com/) - **15% Member Discount**
 - [Trespass](https://www.trespass.com/) - **20% Member Discount** 244 Victoria Centre, Nottingham NG1 3QE
 - [Cotswold Outdoor](https://www.cotswoldoutdoor.com/) -  **10% Member/Student Discount** | Castle Buildings, Castle Blvd, Nottingham NG7 1SA
