@@ -1,8 +1,8 @@
 ---
 title: "The Edges"
 date: 2023-10-15T11:54:00-06:00
-lng: "-1.7070"
-lat: "53.4000"
+lng: "-1.628172643246567"
+lat: "53.283987378613304"
 ticket_link: "https://su.nottingham.ac.uk/events/id/5178-the-edges-sunday-walk"
 ---
 
