@@ -1,6 +1,6 @@
 ---
 title: "Edale"
-date: 2023-10-22T11:54:00-06:00
+date: 2023-11-26T11:54:00-06:00
 lng: "-1.8158"
 lat: "53.3673"
 ticket_link: "https://su.nottingham.ac.uk/events/id/5177-edale-sunday-walk"
