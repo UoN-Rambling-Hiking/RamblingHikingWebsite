@@ -39,7 +39,7 @@ with fewer stops.
 
 {{< /generalInfo >}}
 
-{{% walk name="Day 1| Walk 2" os="https://explore.osmaps.com/route/16397151/ladybower-walk-1--november-2023-fionn" %}}
+{{% walk name="Day 1| Walk 2" os="https://explore.osmaps.com/route/19279382/snowdonia-day-1-walk-2--november-2023-fionn" %}}
 
 ## Moel y Dyniewyd and the Aberglaslyn Pass
 
@@ -58,7 +58,7 @@ at the Tanronnen Inn (SH 590 481).
 
 {{% /walk %}}
 
-{{% walk name="Day 1| Walk 3" os="https://explore.osmaps.com/route/16397211/ladybower-walk-2--november-2023-fionn" %}}
+{{% walk name="Day 1 | Walk 3" os="https://explore.osmaps.com/route/18709555/snowdonia-day-1-walk-3--november-2023-fionn" %}}
 
 ## Snowdon via the Pyg and Miners’ Tracks, The Classic Route
 
@@ -72,7 +72,7 @@ lay-by on the A498 (SH 659 554).
 
 {{% /walk %}}
 
-{{% walk name="Day 1| Walk 4" os="https://explore.osmaps.com/route/16397107/ladybower-walk-3--november-2023-fionn" %}}
+{{% walk name="Day 1 | Walk 4" os="https://explore.osmaps.com/route/19188089/snowdonia-day-1-walk-4--november-2023-fionn" %}}
 
 ## Snowdon via the Rhyd Ddu and Ranger Paths, The Quiet Route
 
@@ -88,7 +88,7 @@ Snowdonia Slate Trail for 1.5km towards Rhyd-Ddu. Turn right and follow the B441
 
 {{% /walk %}}
 
-{{% walk name="Day 1| Walk 5" os="https://explore.osmaps.com/route/16397070/ladybower-walk-4--november-2023-fionn" %}}
+{{% walk name="Day 1 | Walk 5" os="https://explore.osmaps.com/route/18709669/snowdonia-day-1-walk-5--november-2023-fionn" %}}
 
 ## Snowdon via the Watkin Path and South Ridge, The Tough Route
 
@@ -103,7 +103,7 @@ and retrace your steps back down the Watkin Path to finish the walk at Pont Beth
 
 {{% /walk %}}
 
-{{% walk name="Day 2| Walk 2" os="https://explore.osmaps.com/route/16397127/ladybower-walk-5--november-2023-fionn" %}}
+{{% walk name="Day 2 | Walk 2" os="https://explore.osmaps.com/route/19250667/snowdonia-day-2-walk-2--november-2023-fionn" %}}
 
 ## Cadair Idris via the Pony Path
 
@@ -114,7 +114,7 @@ the walk at Ty Nant car park (SH 698 152).
 
 {{% /walk %}}
 
-{{% walk name="Day 2| Walk 3" os="https://explore.osmaps.com/route/16397127/ladybower-walk-5--november-2023-fionn" %}}
+{{% walk name="Day 2 | Walk 3" os="https://explore.osmaps.com/route/18707641/snowdonia-day-2-walk-3--november-2023-fionn" %}}
 
 ## Cadair Idris vis the Minffordd and Mynydd Moel Paths
 
@@ -129,7 +129,7 @@ and finish the walk at Dol Idris car park (SH 732 115).
 
 {{% /walk %}}
 
-{{% walk name="Day 2 | Walk 4" os="https://explore.osmaps.com/route/16397127/ladybower-walk-5--november-2023-fionn" %}}
+{{% walk name="Day 2 | Walk 4" os="https://explore.osmaps.com/route/19278785/snowdonia-day-2-walk-4--november-2023-fionn" %}}
 
 ## Cadair Idris via the Fox’s and Pony Paths
 
