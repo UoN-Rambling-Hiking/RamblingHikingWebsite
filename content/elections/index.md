@@ -5,7 +5,7 @@ menu:
 title: Elections
 ---
 
-Elections for Vice President are now open! These close **Miday on Friday 1st December**. Voting is done via [su.nottingham.ac.uk/elections](https://su.nottingham.ac.uk/elections).
+Elections for Vice President are now open! These close **12:00 on Friday 1st December**. Voting is done via [su.nottingham.ac.uk/elections](https://su.nottingham.ac.uk/elections).
 
 Hustings will be happening at **19:00 on Monday 27th**. You'll be able to hear their speaches and ask questions. Teams link will be distributed via email.
 
@@ -83,3 +83,7 @@ If elected, I want to ensure that everything I am responsible for runs smoothly,
 ### Why I should be elected into the role
 
 I should be elected as Vice President because it is a natural progression from the roles I have had previously outside of RAMSOC, and I have the skills and enthusiasm required to succeed.
+
+---
+
+For any questions or queries about elections, please don't hesitate to get in touch with us!
