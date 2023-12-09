@@ -1,9 +1,8 @@
 ---
 title: "Goyt Valley"
-date: 2023-12-03T11:54:00-06:00
+date: 2024-01-04T11:54:00-06:00
 lng: "-1.9808"
 lat: "53.2967"
-ticket_link: "https://su.nottingham.ac.uk/events/id/5693-goyt-valley-sunday-walk"
 ---
 
 {{< walks >}}
