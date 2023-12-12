@@ -20,30 +20,30 @@ As part of volunteering your time with the club, you're able to be rewarded for 
 - 15 Hours: UoN Coffee Mug
 - 20 Hours: Leadership Academy Sports Leader black long sleeved t-shirt
 - 40 Hours: Leadership Academy Sports Leader grey jumper
+- 45 Hours: UoN Black Joggers
 - 50 Hours: Leadership Academy Sports Leader green hoodie
 - 65 Hours: Sports Massage Voucher
-- 45 Hours: UoN Black Joggers
 
 ## Hour Conversion
 
 {{< table id="hours" class="table table-striped table-hover" data-sample=10 >}}
-| **Activity** | **Hours Complete** | **Hours Claim** | **Notes**                            |
-|--------------|--------------------|-----------------|--------------------------------------|
-| G2 Leading   | 5.5                | 6               | 5.5 hours walking with .5 hours prep |
-| G2 Assessing | 5.5                | 6.5             | 5.5 hours walking with 1 hour prep   |
-| G2 Assessed  | 5.5                | 6.25            | 5.5 hours walking with .75 hour prep |
-| G3 Leading   | 7                  | 7.45            | 7 hours walking with .45 hour prep   |
-| G3 Assessing | 7                  | 8               | 7 hours walking with 1 hour prep     |
-| G3 Assessed  | 7                  | 8.5             | 7 hours walking, 1.5 hour prep       |
-| FA G2        | 5.5                | 5.5             | 5.5 hours walking                    |
-| FA G3        | 7                  | 7               | 7 hours walking                      |
-| Driver       |                    |                 | Complete journey (including breaks)  |
-| G2 Training  | 10                 | 14              | 10 hours practical, 4 hours theory   |
-| G3 Training  | tbc                | tbc             | tbc                                  |
+| Activity     | Hours Claim | Notes                                |
+|--------------|-------------|--------------------------------------|
+| G2 Leading   | 6           | 5.5 hours walking with .5 hours prep |
+| G2 Assessing | 6.5         | 5.5 hours walking with 1 hour prep   |
+| G2 Assessed  | 6.25        | 5.5 hours walking with .75 hour prep |
+| G3 Leading   | 7.45        | 7 hours walking with .45 hour prep   |
+| G3 Assessing | 8           | 7 hours walking with 1 hour prep     |
+| G3 Assessed  | 8.5         | 7 hours walking, 1.5 hour prep       |
+| FA G2        | 5.5         | 5.5 hours walking                    |
+| FA G3        | 7           | 7 hours walking                      |
+| Driver       |             | Complete journey (including breaks)  |
+| G2 Training  | 14          | 10 hours practical, 4 hours theory   |
+| G3 Training  | tbc         | tbc                                  |
 
 {{< /table >}}
 
-*These are to be used only as a guide. If you do more, claim more! If you do less, you still sacrifised your time, so claim the suggested amount. If you did not volunteer/lead, you are unable to claim hours.*
+*These are to be used only as a guide. If you do more, claim more! If you do less, you still sacrificed your time, so claim the suggested amount. If you did not volunteer/lead, you are unable to claim hours.*
 
 ## Site Usage
 
