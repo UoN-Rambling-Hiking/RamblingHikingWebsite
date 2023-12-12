@@ -2,10 +2,11 @@
 title: Leader Benefits
 ---
 
+As part of volunteering your time with the club, you're able to be rewarded for your time through the [University of Nottingham Sport Leadership Academy](https://uonsportleaders.com).
+
 *Quick Links*
-- [About](#about)
-  - [Hour Trade](#hour-trade)
-  - [Hour Conversion](#hour-conversion)
+- [Hour Trade](#hour-trade)
+- [Hour Conversion](#hour-conversion)
 - [Site Usage](#site-usage)
   - [Site Registration](#site-registration)
   - [Joining the opportunity](#joining-the-opportunity)
@@ -13,11 +14,7 @@ title: Leader Benefits
   - [Claiming Hours](#claiming-hours)
   - [Claiming Swag](#claiming-swag)
 
-## About
-
-As part of volunteering your time with the club, you're able to be rewarded for your time through the [University of Nottingham Sport Leadership Academy](https://uonsportleaders.com). But what can you claim you may ask?
-
-### Hour Trade
+## Hour Trade
 
 - 15 Hours: UoN Sport Water Bottle
 - 15 Hours: UoN Coffee Mug
@@ -27,8 +24,9 @@ As part of volunteering your time with the club, you're able to be rewarded for 
 - 65 Hours: Sports Massage Voucher
 - 45 Hours: UoN Black Joggers
 
-### Hour Conversion
+## Hour Conversion
 
+{{< table id="hours" class="table table-striped table-hover" data-sample=10 >}}
 | **Activity** | **Hours Complete** | **Hours Claim** | **Notes**                            |
 |--------------|--------------------|-----------------|--------------------------------------|
 | G2 Leading   | 5.5                | 6               | 5.5 hours walking with .5 hours prep |
@@ -42,6 +40,8 @@ As part of volunteering your time with the club, you're able to be rewarded for 
 | Driver       |                    |                 | Complete journey (including breaks)  |
 | G2 Training  | 10                 | 14              | 10 hours practical, 4 hours theory   |
 | G3 Training  | tbc                | tbc             | tbc                                  |
+
+{{< /table >}}
 
 ## Site Usage
 
@@ -63,15 +63,17 @@ It is important you join the correct opportunity, otherwise the club will be cha
 ### The dashboard
 
 ![sports leader dashboard](image-1.png)
-The above photo displays the dashboard. This can be accessed by pressing the 🏠 button any time.
+
+The above photo displays the dashboard. This can be accessed by pressing the (house) button any time.
 
 ### Claiming Hours
 
 On your inital claim, you will have to rate the opportunity. Please leave positive feedback!
 
-1. Go to the `Opportunities` section on the [dashboard](#the-dashboard). Then click `MANAGE` for your desired opportunity. ![image displaying list of opportunities](image-2.png)
+1. Go to the `Opportunities` section on the [dashboard](#the-dashboard). Then click `MANAGE` for your desired opportunity. 
+   ![image displaying list of opportunities](image-2.png)
 2. Go to `Log Hours` and enter the amount of hours you have completed on said date. Then click `LOG HOURS`. Bare in mind, once clicking the `LOG HOURS` button, the `Hours Logged` counter will increase. It is commen to not think the action has been successful, so only press the button once. ![image displaying the claiming page](image-3.png)
-3. Once hours are logged you are done 😀. Hours get confirmed every month or so.
+3. Once hours are logged you are done. Hours get confirmed every month or so.
 
 ### Claiming Swag
 
