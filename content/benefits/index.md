@@ -43,6 +43,8 @@ As part of volunteering your time with the club, you're able to be rewarded for 
 
 {{< /table >}}
 
+*These are to be used only as a guide. If you do more, claim more! If you do less, you still sacrifised your time, so claim the suggested amount. If you did not volunteer/lead, you are unable to claim hours.*
+
 ## Site Usage
 
 It is **highly** recommended you do not use a mobile device to access this site as it is very clunky.
@@ -64,7 +66,7 @@ It is important you join the correct opportunity, otherwise the club will be cha
 
 ![sports leader dashboard](image-1.png)
 
-The above photo displays the dashboard. This can be accessed by pressing the (house) button any time.
+The above photo displays the dashboard. This can be accessed by pressing the 🏠(house) button any time.
 
 ### Claiming Hours
 
@@ -72,7 +74,7 @@ On your inital claim, you will have to rate the opportunity. Please leave positi
 
 1. Go to the `Opportunities` section on the [dashboard](#the-dashboard). Then click `MANAGE` for your desired opportunity. 
    ![image displaying list of opportunities](image-2.png)
-2. Go to `Log Hours` and enter the amount of hours you have completed on said date. Then click `LOG HOURS`. Bare in mind, once clicking the `LOG HOURS` button, the `Hours Logged` counter will increase. It is commen to not think the action has been successful, so only press the button once. ![image displaying the claiming page](image-3.png)
+2. Go to `Log Hours` and enter the amount of hours you have completed on said date. Then click `LOG HOURS`. Bare in mind, once clicking the `LOG HOURS` button, the `Hours Logged` counter will increase. It is common to not think the action has been successful, so only press the button once. ![image displaying the claiming page](image-3.png)
 3. Once hours are logged you are done. Hours get confirmed every month or so.
 
 ### Claiming Swag
