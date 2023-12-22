@@ -1,8 +1,7 @@
 ---
 menu:
   main:
-    name: General Kit 
-    parent: Gear
+    name: General Kit
 title: General Kit
 ---
 
