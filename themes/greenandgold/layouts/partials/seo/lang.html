@@ -1,0 +1,10 @@
+<meta property="og:locale" content="{{ .Language.Lang }}" />
+<meta name="language" content="{{ .Language.LanguageName }}" />
+{{ range .AllTranslations }}
+<link
+        rel="alternate"
+        hreflang="{{ .Language.Lang }}"
+        href="{{ .Permalink }}"
+        title="{{ .Language.LanguageName }}"
+/>
+{{ end }}

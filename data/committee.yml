@@ -1,0 +1,51 @@
+members:
+    - identifier: president
+      title: President
+      name: Dan Lee
+      contact: president@ramsoc.co.uk
+      image: /img/profiles/Dan.jpg
+    - identifier: vicepresident
+      title: Vice President
+      name: Lewis Wilson
+      contact: vice-president@ramsoc.co.uk
+      image: /img/profiles/Lewis.jpg
+    - identifier: treasurer
+      title: Treasurer
+      name: Amy Hopper
+      contact: treasurer@ramsoc.co.uk
+      image: /img/profiles/Amy.jpg
+    - identifier: gensec
+      title: General Secretary
+      name: Holly Salaman
+      contact: secretary@ramsoc.co.uk
+      image: /img/profiles/Holly-min.jpg
+    - identifier: saftey
+      title: Safety Officer
+      name: Maddy Flynn
+      contact: safety@ramsoc.co.uk
+      image: /img/profiles/Maddy-min.jpg
+    - identifier: ramble
+      title: Ramble Secretary
+      name: Fionn Mackie
+      contact: ramble@ramsoc.co.uk
+      image: /img/profiles/Fionn-min.jpg
+    - identifier: social
+      title: Social Secretary
+      name: Hafsa Sheikh
+      contact: social@ramsoc.co.uk
+      image: /img/profiles/Hafsa-min.jpg
+    - identifier: publicity
+      title: Publicity Officer
+      name: Theo Smith 
+      contact: publicity@ramsoc.co.uk
+      image: /img/profiles/Theo-min.jpg
+    - identifier: kit
+      title: Kit Secretary
+      name: Lily Sconce
+      contact: kit@ramsoc.co.uk
+      image: /img/profiles/Lilly-min.jpg
+    - identifier: welfare
+      title: Welfare Officer
+      name: Ella McLeod
+      contact: welfare@ramsoc.co.uk
+      image: /img/profiles/Ella-min.jpg
