@@ -1,0 +1,5 @@
+# Theme config.
+theme = "greenandgold"
+
+[params]
+    dateFormat = "Mon 02 Jan 2006"
