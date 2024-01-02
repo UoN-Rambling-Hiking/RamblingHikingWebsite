@@ -35,9 +35,6 @@ canonifyURLs = true
   [[menu.main]]
     name = "About"
     weight = 3
-  [[menu.main]]
-    name = "Gear"
-    weight = 4
 
 
   [outputs]

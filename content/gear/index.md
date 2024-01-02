@@ -1,7 +1,8 @@
 ---
 menu:
   main:
-    name: General Kit
+    name: Gear
+    weight: 4
 title: General Kit
 ---
 
