@@ -47,7 +47,7 @@ As part of volunteering your time with the club, you're able to be rewarded for 
 
 ## Site Usage
 
-It is **highly** recommended you do not use a mobile device to access this site as it is very clunky.
+It is recommended you use a computer to access the site.
 
 ### Site Registration
 
