@@ -80,6 +80,7 @@
             <div class="container">
                 <nav class="nav nav-masthead justify-content-center sticky-top">
                     <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="#event">Events</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="signup">Sign-Up</a>
 <!--                    <a class="nav-link fw-bold py-1 px-0" href="#the-past">Through the years</a>-->
                     <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
                 </nav>
@@ -109,11 +110,52 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="mod_sat" tabindex="-1" aria-labelledby="mod_sat_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="mod_sat_label">Saturday 4<sup>th</sup> May</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ with .Site.GetPage "/anniversary/saturday.md" }}
+                {{ .Content }}
+                {{ end }}
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-uongreen btn-lg w-100" onClick="window.open('signup');">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mod_sun" tabindex="-1" aria-labelledby="mod_sun_label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="mod_sun_label">Sunday 5<sup>th</sup> May</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{ with .Site.GetPage "/anniversary/sunday.md" }}
+                {{ .Content }}
+                {{ end }}
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-uongreen btn-lg w-100" onClick="window.open('signup');">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold" id="event">Events</h2>
-<div class="container mt-5">
+<div class="container">
     <h3>A weekend (4th-5th May) of activities consisting of:</h3>
     <div class="row row-cols-1 row-cols-sm-2">
         <div class="col pb-5">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#mod_sat">
                 <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
                     {{ with or (resources.Get "/img/90/cosy_club.png") (resources.Get "/img/fallback.png") }}
                     {{ with .Fill "500x300" }}
@@ -125,8 +167,10 @@
                         <p class="card-text">Saturday 4<sup>th</sup> May</p>
                     </div>
                 </div>
+            </a>
         </div>
-        <div class="col">
+        <div class="col pb-5">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#mod_sun">
                 <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
                     {{ with or (resources.Get "/img/90/edale.jpg") (resources.Get "/img/fallback.png") }}
                     {{ with .Fill "500x300" }}
@@ -138,9 +182,51 @@
                         <p class="card-text">Sunday 5<sup>th</sup> May</p>
                     </div>
                 </div>
+            </a>
         </div>
     </div>
-    <h3>More details to come shortly</h3>
+    <button class="btn btn-uongreen btn-lg w-100" onClick="window.open('signup');">Sign Up</button>
+</div>
+
+<h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">Merchandise</h2>
+<div class="container">
+    <h3>Merchandise will be available to purchase soon. Starting from £6.</h3>
+    <div>
+        <div id="carousel-merch" class="carousel slide col-md-6 mx-auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-merch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-merch" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-merch" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-merch" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel-merch" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/img/90/merch/DSC_2672.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/90/merch/DSC_2705.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/90/merch/DSC_2724.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/90/merch/DSC_2729.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/img/90/merch/DSC_2738.jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-merch" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-merch" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 </div>
 
 
@@ -185,6 +271,23 @@
     });
 
     headerObserver.observe(header)
+
+    function randomCarousel() {
+        const carousel = document.getElementById('carousel-merch');
+        carousel.querySelectorAll('.carousel-item').forEach((item, index) => {
+            item.classList.remove('active');
+        });
+        const carouselItems = carousel.querySelectorAll('.carousel-item');
+        const randomIndex = Math.floor(Math.random() * 5);
+        carouselItems.forEach((item, index) => {
+            if (index === randomIndex) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    }
+    randomCarousel();
 </script>
 </html>
 

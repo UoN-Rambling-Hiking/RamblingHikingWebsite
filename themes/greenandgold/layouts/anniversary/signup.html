@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ .Language }}">
+{{- partial "head.html" . -}}
+
+<style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+    }
+
+    .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+    }
+
+    .nav-color {
+        background-color: var(--uon-sport-green) !important;
+        transition: background-color 200ms linear;
+    }
+
+    .nav-masthead .nav-link {
+        color: rgba(255, 255, 255, .5);
+        border-bottom: .25rem solid transparent;
+    }
+
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+        border-bottom-color: rgba(255, 255, 255, .25);
+    }
+
+    .nav-masthead .nav-link + .nav-link {
+        margin-left: 1rem;
+    }
+
+    .nav-masthead .active {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    .fade-in-text {
+        animation: fadeIn 5s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+<body style="
+    background-image: url('/img/90/old_dpm.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.75);
+  ">
+
+<div class="cover-container container px-4">
+    <header class="mb-auto">
+        <div class="fixed-top" id="navbar">
+            <div class="container">
+                <nav class="nav nav-masthead justify-content-center sticky-top">
+                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="/anniversary/#event">Events</a>
+                    <a class="nav-link fw-bold py-1 px-0 active">Sign-Up</a>
+                    <!--                    <a class="nav-link fw-bold py-1 px-0" href="#the-past">Through the years</a>-->
+                    <a class="nav-link fw-bold py-1 px-0" href="/anniversary/#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+<div id="header">
+    <div>
+        <div class="p-5 container">
+            <div class="card">
+                <div class="card-body">
+                    <fieldset>
+                        <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold" id="event">
+                            90<sup>th</sup> Interest Form</h2>
+                    </fieldset>
+                    <h5>The Details</h5>
+                    <div class="accordion mb-3 accordion-uongreen" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#saturday" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    Saturday 4 <sup>th</sup> May: Evening Meal
+                                </button>
+                            </h2>
+                            <div id="saturday" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ with .Site.GetPage "/anniversary/saturday.md" }}
+                                    {{ .Content }}
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sunday" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    Sunday 5 <sup>th</sup> May: Edale Hike
+                                </button>
+                            </h2>
+                            <div id="sunday" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ with .Site.GetPage "/anniversary/sunday.md" }}
+                                    {{ .Content }}
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Official invites will be sent out in a few weeks. Spaces are limited and are on a first come, first served process.</p>
+                    <p>Please state how many tickets you require (including kids), and add any extra info in the last box.</p>
+                    <p>Menu for the event will be distributed with ticket allocation, alongside any purchase links</p>
+                    <hr>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfFuiQ_ZcJy_cshwo-PJeALRCr6lkZWfifLLnY5Mw0xXSr0ug/formResponse"
+                          target="_self"
+                          id="bootstrapForm"
+                          method="POST">
+
+
+                        <!-- Field type: "short" id: "1557678815" -->
+                        <fieldset class="mb-3">
+                            <legend for="1557678815">Name<span style="color:#065434">*</span></legend>
+                            <div class="form-group">
+                                <input id="1842779032" type="text" name="entry.1842779032" class="form-control" required>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "short" id: "843176147" -->
+                        <fieldset class="mb-3">
+                            <legend for="843176147">Email<span style="color:#065434">*</span></legend>
+                            <div class="form-group">
+                                <input id="1084783023" type="email" name="entry.1084783023" class="form-control" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "short" id: "161285106" -->
+                        <fieldset class="mb-3">
+                            <legend for="161285106">How many tickets do you require?<span style="color:#065434">*</span></legend>
+                            <div class="form-group">
+                                <input id="848292771" type="number" min="1" max="10" step="1" name="entry.848292771" class="form-control" required>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "choices" id: "1754246840" -->
+                        <fieldset class="mb-3">
+                            <legend for="1754246840">Will you be attending the evening meal?<span style="color:#065434">*</span></legend>
+                            <div class="form-group">
+                                <div class="radio form-check form-check-inline">
+                                    <label>
+                                        <input type="radio" name="entry.1825014340" value="Yes" required class="form-check-input form-check-uongreen">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="radio form-check form-check-inline">
+                                    <label>
+                                        <input type="radio" name="entry.1825014340" value="No" required class="form-check-input form-check-uongreen">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="radio form-check form-check-inline">
+                                    <label>
+                                        <input type="radio" name="entry.1825014340" value="Maybe" required class="form-check-input form-check-uongreen">
+                                        Maybe
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "choices" id: "1841665296" -->
+                        <fieldset class="mb-3">
+                            <legend for="1841665296">Will you be attending the Sunday walk?<span style="color:#065434">*</span></legend>
+                            <div class="form-group">
+                                <div class="radio form-check">
+                                    <label>
+                                        <input type="radio" name="entry.1129059605" value="Yes - I&#x27;d like transport" required class="form-check-input form-check-uongreen">
+                                        Yes - I&#x27;d like transport
+                                    </label>
+                                </div>
+                                <div class="radio form-check ">
+                                    <label>
+                                        <input type="radio" name="entry.1129059605" value="Yes - I&#x27;ll make my own travel arrangements" required class="form-check-input form-check-uongreen">
+                                        Yes - I&#x27;ll make my own travel arrangements
+                                    </label>
+                                </div>
+                                <div class="radio form-check">
+                                    <label>
+                                        <input type="radio" name="entry.1129059605" value="No" required class="form-check-input form-check-uongreen">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="radio form-check">
+                                    <label>
+                                        <input type="radio" name="entry.1129059605" value="Maybe" required class="form-check-input form-check-uongreen">
+                                        Maybe
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "short" id: "59505416" -->
+                        <fieldset class="mb-3">
+                            <legend for="59505416">What year did you join Ramsoc?</legend>
+                            <div class="form-group">
+                                <input id="1607511606" type="number" min="1934" step="1" name="entry.1607511606" class="form-control" >
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "short" id: "1799793452" -->
+                        <fieldset class="mb-3">
+                            <legend for="1799793452">Did you hold any role in the club?</legend>
+                            <div class="form-group">
+                                <input id="1162779070" type="text" name="entry.1162779070" class="form-control" >
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "paragraph" id: "1006117453" -->
+                        <fieldset class="mb-3">
+                            <legend for="1006117453">Any fun facts or extra info we should know?</legend>
+                            <div class="form-group">
+                                <textarea id="1327977792" name="entry.1327977792" class="form-control" ></textarea>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- Field type: "checkboxes" id: "276744842" -->
+                        <fieldset class="mb-3">
+                            <legend for="276744842">Sign me up to the newsletter</legend>
+                            <div class="form-group form-switch">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="entry.1229842267" value="Yes" class="form-check-input form-check-uongreen " role="switch" checked>
+                                        Yes
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <input type="hidden" name="fvv" value="1">
+                        <input type="hidden" name="fbzx" value="-8545044764717847836">
+                        <!--
+                            CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                            This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                            Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                            We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                        -->
+                        <input type="hidden" name="pageHistory" value="0">
+
+                        <input class="btn btn-primary btn-uongreen w-100" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="mb-3 mb-md-0 text-body-secondary text-center">Contact: <a class="text-uon-green" href="mailto:anniversary@ramsoc.co.uk">anniversary@ramsoc.co.uk</a></div>
+                <footer class="mb-3 mb-md-0 text-body-secondary text-center">This form was created inside University of Nottingham Students' Union. Data goes through Google Forms.</footer>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $('#bootstrapForm').submit(function (event) {
+        event.preventDefault()
+        var extraData = {}
+        $('#bootstrapForm').ajaxSubmit({
+            data: extraData,
+            dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+            error: function () {
+                // Submit of form should be successful but JSONP callback will fail because Google Forms
+                // does not support it, so this is handled as a failure.
+                alert('Form Submitted. Thanks.')
+                // You can also redirect the user to a custom thank-you page:
+                window.location = 'https://danlee.uk'
+            }
+        })
+    })
+</script>
+<script>
+    const nav = document.getElementById('navbar');
+    const header = document.querySelector('#header');
+    const navHeight = nav.getBoundingClientRect().height;
+
+    function updateNavColor(entries) {
+        const [entry] = entries;
+        if (!entry.isIntersecting) {
+            nav.classList.add("nav-color");
+        } else {
+            nav.classList.remove("nav-color");
+        }
+
+    }
+
+    const headerObserver = new IntersectionObserver(updateNavColor, {
+        root: null,
+        threshold: 0,
+        rootMargin: `-${navHeight}px`
+    });
+
+    headerObserver.observe(header)
+</script>
+</html>
