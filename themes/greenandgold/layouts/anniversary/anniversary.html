@@ -155,7 +155,7 @@
     <h3>A weekend (4th-5th May) of activities consisting of:</h3>
     <div class="row row-cols-1 row-cols-sm-2">
         <div class="col pb-5">
-            <a type="button" data-bs-toggle="modal" data-bs-target="#mod_sat">
+            <a data-bs-toggle="modal" data-bs-target="#mod_sat">
                 <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
                     {{ with or (resources.Get "/img/90/cosy_club.png") (resources.Get "/img/fallback.png") }}
                     {{ with .Fill "500x300" }}
@@ -170,7 +170,7 @@
             </a>
         </div>
         <div class="col pb-5">
-            <a type="button" data-bs-toggle="modal" data-bs-target="#mod_sun">
+            <a data-bs-toggle="modal" data-bs-target="#mod_sun">
                 <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
                     {{ with or (resources.Get "/img/90/edale.jpg") (resources.Get "/img/fallback.png") }}
                     {{ with .Fill "500x300" }}
