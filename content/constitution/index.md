@@ -32,22 +32,22 @@ UNIVERSITY OF NOTTINGHAM SPORT RAMBLING AND HIKING CLUB
 
 
 4. Committee
-   1. The Club committee shall be responsible for the effective running of the club in line with UoN Sport. 
+   1. The Club committee shall be responsible for the effective running of the club in line with UoN Sport.
    2. The committee shall consist of three core committee members, and any additional committee members required.
    3. The Core committee members shall be titled President, Secretary and Treasurer.
       1. President shall have overall responsibility for the Club and chair all meetings.
-      2. Secretary shall be responsible for general administration of the Club and meeting coordination including minute taking. The secretary should ensure minutes are available to the membership in a timely manner. 
-      3. Treasurer shall be responsible for the financial sustainability of the Club. 
+      2. Secretary shall be responsible for general administration of the Club and meeting coordination including minute taking. The secretary should ensure minutes are available to the membership in a timely manner.
+      3. Treasurer shall be responsible for the financial sustainability of the Club.
 
 
    4. The Additional Committee Members shall be determined by the sport club in association to their competition and administrative needs:
-      4. Vice President shall be responsible for assisting committee members where desired and in the planning and running of large activities run by the Club.
-      5. Rambling Secretary shall be responsible for the planning of hiking activities of the Club.
-      6. Social Secretary shall be responsible for the planning and running of the Club’s social activities.
-      7. Safety Officer shall be responsible for compliance with the University of Nottingham Students’ Union health and safety guidelines and to organise the training and listing of walk leaders and first aiders.
-      8. Publicity Officer shall be responsible for the Club’s public relations seeking to increase engagement and interest and to be responsible for the Club’s website and social media platforms.
-      9. Equipment Officer shall be responsible for the maintenance of the Club’s equipment, ensure an accurate inventory and to ensure equipment is available for the Club’s rambling activities.
-      10. Welfare Officer and Equity, Diversity and Inclusion (EDI) Officer  shall be responsible for coordinating with the UoN engage program and helping arrange the club’s Engage activities. They shall also be responsible for the general welfare of the Club’s members as well as the club’s efforts to promote equity, diversity and inclusion.
+      1. Vice President shall be responsible for assisting committee members where desired and in the planning and running of large activities run by the Club.
+      2. Rambling Secretary shall be responsible for the planning of hiking activities of the Club.
+      3. Social Secretary shall be responsible for the planning and running of the Club’s social activities.
+      4. Safety Officer shall be responsible for compliance with the University of Nottingham Students’ Union health and safety guidelines and to organise the training and listing of walk leaders and first aiders.
+      5. Publicity Officer shall be responsible for the Club’s public relations seeking to increase engagement and interest and to be responsible for the Club’s website and social media platforms.
+      6. Equipment Officer shall be responsible for the maintenance of the Club’s equipment, ensure an accurate inventory and to ensure equipment is available for the Club’s rambling activities.
+      7. Welfare Officer and Equity, Diversity and Inclusion (EDI) Officer  shall be responsible for coordinating with the UoN engage program and helping arrange the club’s Engage activities. They shall also be responsible for the general welfare of the Club’s members as well as the club’s efforts to promote equity, diversity and inclusion.
    5. Committee members must be full members of the Club.
    6. Two Honorary Vice Presidents, appointed by the President, will have a ceremonial position and non-organising role within the club.
    7. Committee members, who fail to fulfil their duties, may be removed from position by a simple majority vote of no confidence at an Extraordinary General Meeting (EGM) after attempting to reach a resolution through informal discussions with the Sports Officer. To propose a vote of no confidence, a written petition outlining the reasons for such a vote must be submitted to the Sports Officer from at least 20% of members, or 40 members, whichever is less, to the Club Committee

@@ -3,7 +3,7 @@ menu:
   main:
     parent: About
     name: Hikers Operating Procedures
-    weight: 2
+    weight: 4
 title: Hikers Operating Procedures
 ---
 
