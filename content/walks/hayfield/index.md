@@ -23,8 +23,6 @@ spectacular views west towards Kinder Reservoir.
 
 {{< /generalInfo >}}
 
-
-
 {{% walk name= "Walk 2" os="https://explore.osmaps.com/route/20396432/Hayfield-Walk-2-March-2024-Fionn" %}}
 
 ## Mill Hill and Kinder Reservoir
@@ -44,4 +42,4 @@ Join Valley Road and continue straight for 750m. Turn right and
 finish the walk at the George Hotel (SK 037 869). 
 
 {{% /walk %}}
-{{< /walks >}
+{{< /walks >}}
