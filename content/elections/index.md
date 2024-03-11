@@ -9,7 +9,7 @@ title: Elections
 
 - **Monday 27th February 09:00** – Interest for committee and manifesto submitted to President (by replying to this email)
 - **Monday 4th March 09:00** - Nominations open
-- **Friday 9th March 09:00** - Nominations close
+- **Friday 8th March 09:00** - Nominations close
 - **Wednesday 20th March 19:00** – AGM (running committee members must be present)
 - **Friday 22nd March 09:00** - Voting closes
 
