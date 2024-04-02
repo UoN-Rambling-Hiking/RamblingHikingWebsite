@@ -21,6 +21,38 @@
 </div>
 
 <h2 class="display-2 text-center font-uon text-uon-gold my-3 fw-bold">Participation Club of the Year</h2>
+<h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Meet Your 2024 Committee</h2>
+<div class="container text-center my-3">
+    <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                {{ range .Site.Data.committee.active }}
+                {{ if eq .title "President" }}
+                <div class="carousel-item uon-carousel-item active">
+                {{ else }}
+                    <div class="carousel-item uon-carousel-item">
+                        {{ end }}
+                    <div class="col-md-3">
+                        <div class="my-2">
+                            <div class="card-img">
+                                <img src="{{ .image }}" class="bd-placeholder-img rounded-circle" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="175" height="175" alt="{{ .name }}">
+                            </div>
+                            <h2 class="fw-normal">{{ .short_title }}</h2>
+                            <h5 class="fw-normal">{{ .name }}</h5>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</div>
 <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
 <div class="container mt-5">
     <div class="row row-cols-1 row-cols-sm-2">
@@ -105,7 +137,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
     <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What You Can Expect</h2>
     <div class="ratio ratio-16x9 mx-md-0">
         <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
@@ -171,5 +202,23 @@
     </div>
 </div>
 
+<script>
+    let items = document.querySelectorAll('.uon-carousel-item')
+
+    items.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+
+</script>
 
 {{ end }}
