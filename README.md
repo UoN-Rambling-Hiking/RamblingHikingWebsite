@@ -8,10 +8,10 @@ This is a downstream from the [original source](https://github.com/dan-lee76/ram
 ## How it's made
 The website core dependencies are:
  * [Hugo](https://gohugo.io)
- * [Github Pages](https://pages.github.com)
+ * [Cloudflare Pages](https://pages.cloudflare.com/)
 
 ## Deployment
-GitHub Pages automatically redeploy the website at 22:00 every day.
+Cloudflare Pages automatically redeploy the website at 22:00 Wednesday-Saturday and 19:00 on Sundays.
 
 ## Contributing
 Contributions are welcome for both updating our Calendar and improving the website.
