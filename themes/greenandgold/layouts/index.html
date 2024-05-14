@@ -20,7 +20,6 @@
     </div>
 </div>
 
-<h2 class="display-2 text-center font-uon text-uon-gold my-3 fw-bold">Participation Club of the Year</h2>
 <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Meet Your 2024 Committee</h2>
 <div class="container text-center my-3">
     <div class="row mx-auto my-auto justify-content-center">
@@ -55,68 +54,53 @@
 </div>
 <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
 <div class="container mt-5">
-<!--    <div class="row row-cols-1 row-cols-sm-2">-->
-<!--            {{ $events := where .Site.RegularPages "Section" "walks" }}-->
-<!--            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}-->
-<!--            {{ range $events}}-->
-<!--        <div class="col pb-5">-->
-<!--            {{ if ne (strings.Chomp .Content) "" }}-->
-<!--            <a href="{{ .RelPermalink }}">-->
-<!--                {{end}}-->
-<!--                <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">-->
-<!--                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}-->
-<!--                    {{ with .Fill "500x300" }}-->
-<!--                    <img src="{{ .RelPermalink }}" class="img-fluid">-->
-<!--                    {{end}}-->
-<!--                    {{end}}-->
-<!--                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">-->
-<!--                        <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>-->
-<!--                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                {{ if ne (strings.Chomp .Content) "" }}-->
-<!--            </a>-->
-<!--            {{end}}-->
-<!--        </div>-->
-<!--        {{ end }}-->
-<!--            {{ $events := where .Site.RegularPages "Section" "socials" }}-->
-<!--            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}-->
-<!--            {{ range $events}}-->
-<!--        <div class="col">-->
-<!--            {{ if ne (strings.Chomp .Content) "" }}-->
-<!--            <a href="{{ .RelPermalink }}">-->
-<!--                {{end}}-->
-<!--                <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">-->
-<!--                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}-->
-<!--                    {{ with .Fill "500x300" }}-->
-<!--                    <img src="{{ .RelPermalink }}" class="img-fluid">-->
-<!--                    {{end}}-->
-<!--                    {{end}}-->
-<!--                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">-->
-<!--                        <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>-->
-<!--                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                {{ if ne (strings.Chomp .Content) "" }}-->
-<!--            </a>-->
-<!--            {{ end }}-->
-<!--        </div>-->
-<!--        {{ end }}-->
-<!--    </div>-->
-    <div class="col pb-5">
-        <a href="/anniversary">
-            <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
-                {{ with or (resources.Get "/img/90/old_dpm.jpg") (resources.Get "/img/fallback.png") }}
-                {{ with .Fill "500x300" }}
-                <img src="{{ .RelPermalink }}" class="img-fluid">
+    <div class="row row-cols-1 row-cols-sm-2">
+            {{ $events := where .Site.RegularPages "Section" "walks" }}
+            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
+            {{ range $events}}
+        <div class="col pb-5">
+            {{ if ne (strings.Chomp .Content) "" }}
+            <a href="{{ .RelPermalink }}">
                 {{end}}
-                {{end}}
-                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
-                    <h3 class="card-title display-5">90th Celebration Event</h3>
-                    <p class="card-text">Saturday 4<sup>th</sup> May - Sunday 5<sup>th</sup> May</p>
+                <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
+                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                    {{ with .Fill "500x300" }}
+                    <img src="{{ .RelPermalink }}" class="img-fluid">
+                    {{end}}
+                    {{end}}
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                    </div>
                 </div>
-            </div>
-        </a>
+                {{ if ne (strings.Chomp .Content) "" }}
+            </a>
+            {{end}}
+        </div>
+        {{ end }}
+            {{ $events := where .Site.RegularPages "Section" "socials" }}
+            {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
+            {{ range $events}}
+        <div class="col">
+            {{ if ne (strings.Chomp .Content) "" }}
+            <a href="{{ .RelPermalink }}">
+                {{end}}
+                <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
+                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                    {{ with .Fill "500x300" }}
+                    <img src="{{ .RelPermalink }}" class="img-fluid">
+                    {{end}}
+                    {{end}}
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                        <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                    </div>
+                </div>
+                {{ if ne (strings.Chomp .Content) "" }}
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
     </div>
 
     <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Our (Funny) Members</h2>
