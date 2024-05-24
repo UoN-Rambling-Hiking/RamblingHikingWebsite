@@ -71,7 +71,9 @@
         <div class="d-flex flex-column flex-sm-row justify-content-between ">
             <span class="mb-3 mb-md-0 text-body-secondary">&copy; {{ now.Format "2006"}} The University of Nottingham Rambling & Hiking Club. Maps &copy; <a class="text-uon-green" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
         <br>
-            Website by <a class="text-uon-green" href="https://danlee.uk">Dan Lee</a> and <a class="text-uon-green" href="https://github.com/UoN-Rambling-Hiking">contributors</a></span>
+            Website by <a class="text-uon-green" href="https://danlee.uk">Dan Lee</a> and <a class="text-uon-green" href="https://github.com/UoN-Rambling-Hiking">contributors</a>
+                <br>
+            Site generated at: {{ time.Now | time.Format "2006-01-02 15:04:05 -0700"}}</span>
             <ul class="list-unstyled d-flex">
                 <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Rambling_Hiking"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#twitter"/></svg></a></li>
                 <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/uon_rambling_hiking/"><svg class="bi" width="24" height="24" style="fill: var(--uon-sport-green);"><use xlink:href="#instagram"/></svg></a></li>
