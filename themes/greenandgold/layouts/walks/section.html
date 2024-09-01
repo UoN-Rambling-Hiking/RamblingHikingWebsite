@@ -11,8 +11,10 @@
         center: [-1.6762, 53.2152], // starting position [lng, lat]
         zoom: 6, // starting zoom
     }).addControl(new mapboxgl.FullscreenControl()).addControl(new mapboxgl.NavigationControl()).addControl(new mapboxgl.ScaleControl());
-    {{ range where .Pages "Section" "walks" }}
-    new mapboxgl.Marker({ color: "#065434", })
+    {{ range (where .Pages "Section" "walks").Reverse }}
+    color = "var(--uon-sport-green)";
+    {{ if ge .Date (time.Now)}} color = "var(--uon-sport-gold)"; {{ end }}
+    new mapboxgl.Marker({ color: color, })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
         .setPopup(new mapboxgl.Popup().setHTML('' +
             '{{ if ne (strings.Chomp .Content) ""  }}<a href="{{ .RelPermalink }}">{{end}}' +
