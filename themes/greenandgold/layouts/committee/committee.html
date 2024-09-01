@@ -2,18 +2,50 @@
 <div class="container text-center my-3">
   <h1 class="display-4">Committee</h1>
   <hr>
+    <h2 class="display-5">24/25</h2>
 <!-- Three columns of text below the carousel -->
 <div class="row justify-content-center">
-    {{ range .Site.Data.committee.members }}
+    {{ range .Site.Data.committee.active }}
+    {{ if eq .title "President" }}
+    <div class="col-lg-12 my-md-4 my-2">
+    {{ else }}
     <div class="col-lg-4 my-md-4 my-2">
+    {{ end }}
       {{/*  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>  */}}
-      <img src="{{ .image }}" class="bd-placeholder-img rounded-circle" width="175" height="175" alt="{{ .name }}">
+      <img src="{{ .image }}" class="bd-placeholder-img rounded-circle" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="175" height="175" alt="{{ .name }}">
       <h2 class="fw-normal">{{ .title }}</h2>
       <h5 class="fw-normal">{{ .name }}</h5>
+      <a class="text-uon-green" href="mailto:{{.contact}}"><p>{{ .contact }}</p></a>
     </div><!-- /.col-lg-4 -->
     {{ end }}
-
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        23/24 Committee
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                        {{ range .Site.Data.committee.old }}
+                        {{ if eq .title "President" }}
+                        <div class="col-lg-12 my-md-4 my-2">
+                            {{ else }}
+                            <div class="col-lg-4 my-md-4 my-2">
+                                {{ end }}
+                                {{/*  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>  */}}
+                                <img src="{{ .image }}" class="bd-placeholder-img rounded-circle" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="175" height="175" alt="{{ .name }}">
+                                <h2 class="fw-normal">{{ .title }}</h2>
+                                <h5 class="fw-normal">{{ .name }}</h5>
+                                <a class="text-uon-green" href="mailto:{{.contact}}"><p>{{ .contact }}</p></a>
+                            </div><!-- /.col-lg-4 -->
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
 
   </div><!-- /.row -->
-</div>
+        </div>
 {{ end }}

@@ -4,10 +4,10 @@
     background-image: url('/img/hero.jpg');
     background-size: cover;
     background-position: center center;
-    height: 95vh;
+    height: 92vh;
   ">
     <div style="background-color: rgba(0, 0, 0, 0.5);
-  height: 95vh;">
+  height: 92vh;">
         <div class="px-4 py-5 container hero">
             <div class="position-absolute top-lg-25">
                 <h1 class="display-1 fw-bold text-white font-uon">Rambling & Hiking Club</h1>
@@ -20,7 +20,38 @@
     </div>
 </div>
 
-<h2 class="display-2 text-center font-uon text-uon-gold my-3 fw-bold">Participation Club of the Year</h2>
+<h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Meet Your 2024 Committee</h2>
+<div class="container text-center my-3">
+    <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                {{ range .Site.Data.committee.active }}
+                {{ if eq .title "President" }}
+                <div class="carousel-item uon-carousel-item active">
+                {{ else }}
+                    <div class="carousel-item uon-carousel-item">
+                        {{ end }}
+                    <div class="col-md-3 col-12">
+                        <div class="my-2">
+                            <div class="card-img">
+                                <img src="{{ .image }}" class="bd-placeholder-img rounded-circle" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="175" height="175" alt="{{ .name }}">
+                            </div>
+                            <h2 class="fw-normal">{{ .short_title }}</h2>
+                            <h5 class="fw-normal">{{ .name }}</h5>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</div>
 <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
 <div class="container mt-5">
     <div class="row row-cols-1 row-cols-sm-2">
@@ -72,6 +103,39 @@
         {{ end }}
     </div>
 
+    <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Our (Funny) Members</h2>
+    <div id="carouselMemberPhoto" class="carousel slide mb-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/RHFunny01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <a class="btn btn-outline-light mt-3 btn-sm" href="/img/RHFunny01.jpg" download>
+                        Download
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/RHFunny02.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <a class="btn btn-outline-light mt-3 btn-sm" href="/img/RHFunny02.jpg" download>
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What You Can Expect</h2>
     <div class="ratio ratio-16x9 mx-md-0">
         <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
@@ -84,7 +148,7 @@
             {{end}}
             {{end}}
             <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/gear">
-                Required Gear
+                Gear
             </a>
         </div>
         <div class="col p-sm-1 p-2">
@@ -117,7 +181,7 @@
             {{end}}
         </div>
         <div class="col p-1">
-            {{ with or (resources.Get "/img/landing/landing5.jpeg") (resources.Get "/img/fallback.png") }}
+            {{ with or (resources.Get "/img/landing/landing5.jpg") (resources.Get "/img/fallback.png") }}
             {{ with .Fill "500x300" }}
             <img src="{{ .RelPermalink }}" class="img-fluid">
             {{end}}
@@ -132,10 +196,25 @@
         </div>
 
     </div>
-    <div class="text-center fst-italic pt-4">
-        <p>This site is new and any feedback would be greatly appreciated! <strong>webfeedback@ramsoc.co.uk</strong></p>
-    </div>
 </div>
 
+<script>
+    let items = document.querySelectorAll('.uon-carousel-item')
+
+    items.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+                // wrap carousel by using first child
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+        }
+    })
+
+</script>
 
 {{ end }}

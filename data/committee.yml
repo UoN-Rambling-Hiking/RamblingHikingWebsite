@@ -1,41 +1,102 @@
-members:
+active:
+  - identifier: president
+    title: President
+    short_title: Pres
+    name: Theo Smith
+    contact: president@ramsoc.co.uk
+    image: /img/profiles/24/Theo.jpg
+  - identifier: vicepresident
+    title: Vice President
+    short_title: VP
+    name: Lewis Wilson
+    contact: vice-president@ramsoc.co.uk
+    image: /img/profiles/24/Lewis.jpg
+  - identifier: treasurer
+    title: Treasurer
+    short_title: Treasurer
+    name: Rhiannon Bradley
+    contact: treasurer@ramsoc.co.uk
+    image: /img/profiles/24/Rhiannon.jpg
+  - identifier: gensec
+    title: General Secretary
+    short_title: GenSec
+    name: Lily Sconce
+    contact: secretary@ramsoc.co.uk
+    image: /img/profiles/24/Lily.jpg
+  - identifier: saftey
+    title: Safety Officer
+    short_title: Safety
+    name: Joe Flack
+    contact: safety@ramsoc.co.uk
+    image: /img/profiles/24/Joe.jpg
+  - identifier: ramble
+    title: Ramble Secretary
+    short_title: Ramble
+    name: Fionn Mackie
+    contact: ramble@ramsoc.co.uk
+    image: /img/profiles/24/Fionn.jpg
+  - identifier: social
+    title: Social Secretary
+    short_title: Social
+    name: Simon Beattie
+    contact: social@ramsoc.co.uk
+    image: /img/profiles/24/Simon.jpg
+  - identifier: publicity
+    title: Publicity Officer
+    short_title: Publicity
+    name: Greg Dexter
+    contact: publicity@ramsoc.co.uk
+    image: /img/profiles/24/Greg.jpg
+  - identifier: kit
+    title: Kit Secretary
+    short_title: Kit
+    name: Karol Kukula
+    contact: kit@ramsoc.co.uk
+    image: /img/profiles/24/Karol.jpg
+  - identifier: welfare
+    title: Welfare Officer
+    short_title: Welfare
+    name: Izzy Redpath
+    contact: welfare@ramsoc.co.uk
+    image: /img/profiles/24/Izzy.jpg
+old:
     - identifier: president
       title: President
       name: Dan Lee
-      image: /img/profiles/Dan-min.jpg
+      image: /img/profiles/Dan.jpg
+    - identifier: vicepresident
+      title: Vice President
+      name: Lewis Wilson
+      image: /img/profiles/23/Lewis.jpg
     - identifier: treasurer
       title: Treasurer
       name: Amy Hopper
-      image: /img/profiles/Amy-min.jpg
+      image: /img/profiles/23/Amy.jpg
     - identifier: gensec
       title: General Secretary
       name: Holly Salaman
-      image: /img/profiles/Holly-min.jpg
+      image: /img/profiles/23/Holly-min.jpg
     - identifier: saftey
       title: Safety Officer
       name: Maddy Flynn
-      image: /img/profiles/Maddy-min.jpg
+      image: /img/profiles/23/Maddy-min.jpg
     - identifier: ramble
       title: Ramble Secretary
       name: Fionn Mackie
-      image: /img/profiles/Fionn-min.jpg
+      image: /img/profiles/23/Fionn-min.jpg
     - identifier: social
       title: Social Secretary
       name: Hafsa Sheikh
-      image: /img/profiles/Hafsa-min.jpg
+      image: /img/profiles/23/Hafsa-min.jpg
     - identifier: publicity
       title: Publicity Officer
       name: Theo Smith 
-      image: /img/profiles/Theo-min.jpg
+      image: /img/profiles/23/Theo-min.jpg
     - identifier: kit
       title: Kit Secretary
       name: Lily Sconce
-      image: /img/profiles/Lilly-min.jpg
+      image: /img/profiles/23/Lilly-min.jpg
     - identifier: welfare
       title: Welfare Officer
       name: Ella McLeod
-      image: /img/profiles/Ella-min.jpg
-    - identifier: vicepresident
-      title: Vice President
-      name: Rammy
-      image: /img/profiles/rammy.jpeg
+      image: /img/profiles/23/Ella-min.jpg

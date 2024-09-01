@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/ramblinghiking.css">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/css/carousel.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     {{ template "_internal/opengraph.html" . }}

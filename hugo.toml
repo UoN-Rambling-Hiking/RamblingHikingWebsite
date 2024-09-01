@@ -1,4 +1,4 @@
-baseURL = 'http://ramsocdev.danlee.uk/'
+baseURL = 'https://ramsoc.co.uk'
 languageCode = 'en-us'
 title = 'Rambling & Hiking'
 DefaultContentLanguage = "en"
@@ -15,7 +15,7 @@ canonifyURLs = true
   author = "Rambling & Hiking"
   github = "https://github.com/UoN-Rambling-Hiking"
   sitename = "Rambling & Hiking"
-  description = 'The University of Nottingham Rambling & Hiking Club. We run weekly walks, socials and trips away.'
+  description = 'RAMSOC, the University of Nottinghams Rambling & Hiking Club. We run weekly walks, socials and rips away. One of the universitys oldest and most active clubs.'
   title = 'Rambling & Hiking'
   images = ['img/banner.jpg']
 
@@ -35,9 +35,6 @@ canonifyURLs = true
   [[menu.main]]
     name = "About"
     weight = 3
-  [[menu.main]]
-    name = "Gear"
-    weight = 4
 
 
   [outputs]
