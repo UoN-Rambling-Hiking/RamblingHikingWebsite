@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <div id='map' style='width: 100%; height: 300px;'></div>
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css' rel='stylesheet' />
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuLWxlZTc2IiwiYSI6ImNsaXJ4d3N3azE3M3Mza28xdnVmdGxwczcifQ.j0THIt59Yt7D6qG1WKXTPg';
     const map = new mapboxgl.Map({
@@ -16,11 +16,13 @@
     {{ if ge .Date (time.Now)}} color = "var(--uon-sport-gold)"; {{ end }}
     new mapboxgl.Marker({ color: color, })
         .setLngLat(['{{ .Params.lng }}', '{{ .Params.lat }}'])
-        .setPopup(new mapboxgl.Popup().setHTML('' +
-            '{{ if ne (strings.Chomp .Content) ""  }}<a href="{{ .RelPermalink }}">{{end}}' +
+        .setPopup(
+            new mapboxgl.Popup()
+                .setHTML('<div class="mapbox-popup">' +
+            '{{ if ne (strings.Chomp .Content) ""  }}<a class="text-uon-green fw-bold" href="{{ .RelPermalink }}">{{end}}' +
             '<h6>{{ .Title }}</h6>' +
             '{{ if ne (strings.Chomp .Content) ""  }}</a>{{end}}' +
-            '{{if isset .Params "date"}}<p>{{ .Date.Format "02-01-2006" }}</p>{{ end }}'))
+            '{{if isset .Params "date"}}<p>{{ .Date.Format "02-01-2006" }}</p>{{ end }}' + '</div>'))
         .addTo(map);
     {{ end }}
 </script>

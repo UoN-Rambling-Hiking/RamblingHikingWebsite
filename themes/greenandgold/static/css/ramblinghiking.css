@@ -231,3 +231,21 @@
     background-position: center;
     background-size: 100%;
 }
+
+.mapboxgl-popup {
+    max-width: 200px;
+    padding: 0;
+
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px !important;
+
+}
+
+.mapbox-popup{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
