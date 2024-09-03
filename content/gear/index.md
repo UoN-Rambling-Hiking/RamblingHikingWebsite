@@ -13,7 +13,7 @@ title: General Kit
   - [General Sites](#general-sites)
 - [Opportunities Fund](#opportunities-fund)
 
-Having the right kit is the most important requirement when attending our events. If you turn up to a hike with the wrong kit and leaders deem your gear inappropriate, you will be unable to participate and regrettably cannot be refunded. As stated by our [Hikers Operating Procedures](/hop). 
+Having the right kit is the most important requirement when attending our events. If you turn up to a hike with the wrong kit and leaders deem your gear inappropriate, you will be unable to participate and regrettably cannot be refunded. 
 ## Sunday Hike Essentials
 - Walking Boots - **NOT TRAINERS** - Walking boots are touch soles, ankle support and some level of waterproofing. 
 - Suitable trousers for walking - **NOT JEANS**
@@ -26,7 +26,7 @@ Having the right kit is the most important requirement when attending our events
 ## Purchasing Kit
 Leaders and Committee would be more than happy to help recommended kit and where to purchase. There's plenty of stores locally and online. With most having discount!
 ### Member Deals
-Becoming a member allows you to attend events, and at a reduced rate. Not only that, you can access some sweet discount at these retailers with your membership card, or through our [Members Portal](https://member.ramsoc.co.uk).
+Becoming a member allows you to attend events, and at a reduced rate. Not only that, you can access some sweet discount at these retailers. Codes are sent out on our weekly newsletter.
 - [Magic Mountain](https://www.magic-mountain.co.uk/) - **15% Member Discount**
 - [Montane](https://montane.com/) - **15% Member Discount**
 - [Mountain Warehouse](https://www.mountainwarehouse.com/) - **15% Member Discount**
@@ -40,4 +40,4 @@ Becoming a member allows you to attend events, and at a reduced rate. Not only t
 	- [Millets](https://www.millets.co.uk/)
 
 ## Opportunities Fund
-As part of the cost of living crisis, the students union is giving eligible students **£200** to spend towards club kit and fees each academic year. Find out more by visiting their [cost of living support](https://su.nottingham.ac.uk/activities/opportunities-fund)
+As part of the cost of living situation, the students union is giving eligible students **£200** to spend towards club kit and fees each academic year. Find out more by visiting their [cost of living support](https://su.nottingham.ac.uk/activities/opportunities-fund)
