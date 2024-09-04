@@ -57,3 +57,6 @@ canonifyURLs = true
   changeFreq = ''
   filename = 'sitemap.xml'
   priority = -1
+
+[markup.goldmark.renderer]
+unsafe= true
