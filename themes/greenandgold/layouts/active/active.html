@@ -16,7 +16,7 @@
         {{ if isset .Params "end_date" }}
         <h1 class="display-4 col-md-9 col-7">{{ .Title }} | {{ .Date.Format "Mon 02 Jan" }} -  {{ dateFormat "Mon 02 Jan 2006"  .Params.end_date}}</h1>
         {{ else if isset .Params "date"}}
-        <h1 class="display-4 col-md-9 col-7">{{ .Title }} | {{ .Date.Format "Mon 02 Jan 2006" }}</h1>
+        <h1 class="display-4 col-md-9 col-7">{{ .Title }} | {{ .Date.Format "Mon 02 Jan 2006" }} - {{ .Date.Format "15:04PM" }}</h1>
         {{ else }}
         <h1 class="display-4 col-md-9 col-7">{{ .Title }}</h1>
         {{ end }}

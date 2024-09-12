@@ -2,7 +2,7 @@
 title: "The Roaches"
 lng: "-2"
 lat: "53.1713"
-date: 2024-03-17T11:54:00+01:00
+date: 2024-03-17T09:00:00+01:00
 ticket_link: "https://su.nottingham.ac.uk/events/products/7227"
 ---
 

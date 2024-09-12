@@ -70,7 +70,7 @@
                     {{end}}
                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
                         <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
-                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006 15:04PM" }}</p>
                     </div>
                 </div>
                 {{ if ne (strings.Chomp .Content) "" }}
@@ -93,7 +93,7 @@
                     {{end}}
                     <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
                         <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
-                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
+                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006 15:04PM" }}</p>
                     </div>
                 </div>
                 {{ if ne (strings.Chomp .Content) "" }}
