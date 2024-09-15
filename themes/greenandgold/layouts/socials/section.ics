@@ -32,9 +32,9 @@ STATUS:CONFIRMED
 DTSTAMP:{{dateFormat "20060102T150405" .Date}}
 DTSTART:{{ dateFormat "20060102" .Date }}
 {{ if isset .Params "end_date" -}}
-DTEND:{{ dateFormat "20060102" .Params.end_date }}
+DTEND:{{ dateFormat "20060102T150405" .Params.end_date }}
 {{- else -}}
-DTEND:{{ dateFormat "20060102" (.Date.AddDate 0 0 1) }}
+DTEND:{{ dateFormat "20060102T150405" (.Date.AddDate 0 0 1) }}
 {{- end }}
 LOCATION:{{ .Title }}
 GEO:{{ .Params.lat }};{{ .Params.lng }}
