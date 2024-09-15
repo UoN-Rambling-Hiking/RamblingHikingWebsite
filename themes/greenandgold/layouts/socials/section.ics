@@ -29,7 +29,7 @@ DESCRIPTION:More details can be found at {{ .Permalink }}
 UID:{{replace .Title " " "-" }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
-DTSTAMP:{{dateFormat "20060102T150405Z" .Date}}
+DTSTAMP:{{dateFormat "20060102T150405" .Date}}
 DTSTART:{{ dateFormat "20060102" .Date }}
 {{ if isset .Params "end_date" -}}
 DTEND:{{ dateFormat "20060102" .Params.end_date }}
