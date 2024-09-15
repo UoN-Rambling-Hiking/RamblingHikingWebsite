@@ -29,13 +29,13 @@ DESCRIPTION:More details can be found at {{ .Permalink }}
 UID:{{replace .Title " " "-" }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
-DTSTAMP:{{dateFormat "20060102T150405Z" .Date}}
-DTSTART:{{ dateFormat "20060102T150405Z" .Date }}
+DTSTAMP:{{dateFormat "20060102T150405" .Date}}
+DTSTART:{{ dateFormat "20060102T150405" .Date }}
 {{ if isset .Params "end_date" -}}
 {{- $d := .Params.end_date | time.AsTime -}}
-DTEND:{{ dateFormat "20060102" $d }}T220000Z
+DTEND:{{ dateFormat "20060102" $d }}T220000
 {{- else -}}
-DTEND:{{ dateFormat "20060102" .Date }}T183000Z
+DTEND:{{ dateFormat "20060102" .Date }}T183000
 {{- end }}
 LOCATION:{{ .Title }}
 GEO:{{ .Params.lat }};{{ .Params.lng }}
