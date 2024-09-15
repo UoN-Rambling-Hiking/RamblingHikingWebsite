@@ -3,7 +3,6 @@ VERSION:2.0
 PRODID:-//ramsoc.co.uk//Ramsoc Calendar 1.0//EN
 METHOD:PUBLISH
 LAST-MODIFIED:{{ now.Format "20060102T150405Z" }}
-
 BEGIN:VTIMEZONE
 TZID:Europe/London
 LAST-MODIFIED:20221029T021030Z
@@ -24,7 +23,6 @@ DTSTART:19701025T020000
 RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
-
 CALSCALE:GREGORIAN{{ range .RegularPages }}{{ if isset .Params "date" }}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
@@ -32,7 +30,7 @@ DESCRIPTION:More details can be found at {{ .Permalink }}
 UID:{{replace .Title " " "-" }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
-DTSTAMP:T{{dateFormat "20060102T150405" .Date}}
+DTSTAMP:{{dateFormat "20060102T150405" .Date}}
 DTSTART:{{ dateFormat "20060102T150405" .Date }}
 {{ if isset .Params "end_date" -}}
 {{- $d := .Params.end_date | time.AsTime -}}
