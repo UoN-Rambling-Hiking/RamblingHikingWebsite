@@ -26,7 +26,7 @@ CALSCALE:GREGORIAN{{ range .RegularPages }}{{ if isset .Params "date" }}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
-UID:{{replace .Title " " "-" }}-{{ dateFormat "2006" .Date }}@ramsoc.co.uk
+UID:{{replace .Title " " "-" }}-{{ dateFormat "200601" .Date }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
 DTSTAMP:{{dateFormat "20060102T150405" .Date}}
