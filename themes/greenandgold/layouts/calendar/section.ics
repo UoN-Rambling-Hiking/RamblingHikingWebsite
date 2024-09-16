@@ -269,7 +269,7 @@ CALSCALE:GREGORIAN{{ range (where .Site.RegularPages "Section" "walks") }}{{ if 
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
-UID:{{replace .Title " " "-" }}@ramsoc.co.uk
+UID:{{replace .Title " " "-" }}-{{ dateFormat "2006" .Date }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
 DTSTAMP:{{dateFormat "20060102T150405" .Date}}
@@ -287,7 +287,7 @@ END:VEVENT{{ end }}{{ end -}}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
-UID:{{replace .Title " " "-" }}@ramsoc.co.uk
+UID:{{replace .Title " " "-" }}-{{ dateFormat "2006" .Date }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
 DTSTAMP:{{dateFormat "20060102T150405" .Date}}
