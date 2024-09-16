@@ -3,19 +3,38 @@ VERSION:2.0
 PRODID:-//ramsoc.co.uk//Ramsoc Calendar 1.0//EN
 METHOD:PUBLISH
 LAST-MODIFIED:{{ now.Format "20060102T150405Z" }}
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
 CALSCALE:GREGORIAN{{ range .RegularPages }}{{ if isset .Params "date" }}
 BEGIN:VEVENT
 SUMMARY:{{ .Title }}
 DESCRIPTION:More details can be found at {{ .Permalink }}
-UID:{{replace .Title " " "-" }}@ramsoc.co.uk
+UID:{{replace .Title " " "-" }}-{{ dateFormat "200601" .Date }}@ramsoc.co.uk
 SEQUENCE:0
 STATUS:CONFIRMED
-DTSTAMP:{{dateFormat "20060102T150405Z" .Date}}
-DTSTART:{{ dateFormat "20060102" .Date }}
+DTSTAMP:{{dateFormat "20060102T150405" .Date}}
+DTSTART:{{ dateFormat "20060102T150405" .Date }}
 {{ if isset .Params "end_date" -}}
-DTEND:{{ dateFormat "20060102" .Params.end_date }}
+DTEND:{{ dateFormat "20060102T150405" .Params.end_date }}
 {{- else -}}
-DTEND:{{ dateFormat "20060102" (.Date.AddDate 0 0 1) }}
+DTEND:{{ dateFormat "20060102T150405" (.Date.AddDate 0 0 1) }}
 {{- end }}
 LOCATION:{{ .Title }}
 GEO:{{ .Params.lat }};{{ .Params.lng }}
