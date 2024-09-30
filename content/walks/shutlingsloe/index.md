@@ -33,7 +33,7 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/6820-shutlingsloe-hike"
 
 {{% /walk %}}
 
-{{% walk name="Walk 5" os="https://explore.osmaps.com/route/23565097/shutlingsloe-walk-4--october-2024-fionn"%}}
+{{% walk name="Walk 4" os="https://explore.osmaps.com/route/23565097/shutlingsloe-walk-4--october-2024-fionn"%}}
 
 ### Difficulty Grade: **Moderate**
 
