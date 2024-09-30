@@ -16,28 +16,24 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/6769-black-hill-hike"
 
 {{% walk name="Walk A" os="https://explore.osmaps.com/route/23379659/black-hill-walk-a"%}}
 
-## Walk A
 ### Difficulty Grade: **Easy**
 
 {{% /walk %}}
 
 {{% walk name="Walk B" os="https://explore.osmaps.com/route/23211006/black-hill-walk-b"%}}
 
-## Walk B
 ### Difficulty Grade: **Difficult**
 
 {{% /walk %}}
 
 {{% walk name="Walk C" os="https://explore.osmaps.com/route/23379574/black-hill-walk-c"%}}
 
-## Walk C
 ### Difficulty Grade: **Difficult**
 
 {{% /walk %}}
 
 {{% walk name="Walk D" os="https://explore.osmaps.com/route/23209960/black-hill-walk-d"%}}
 
-## Walk D
 ### Difficulty Grade: **Difficult**
 
 {{% /walk %}}
