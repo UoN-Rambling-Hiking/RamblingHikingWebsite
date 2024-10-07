@@ -45,4 +45,4 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/6820-shutlingsloe-hike"
 
 {{% /walk %}}
 
-{{< /walks >}} 
+{{< /walks >}}
