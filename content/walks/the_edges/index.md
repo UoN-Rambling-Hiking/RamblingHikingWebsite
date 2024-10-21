@@ -30,5 +30,6 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/6822-the-edges-hike"
 
 {{% walk name="Walk 4" os="https://explore.osmaps.com/route/23779578/the-edges-walk-4--october-2024-fionn"%}}
 
+{{% /walk %}}
 
 {{< /walks >}}
