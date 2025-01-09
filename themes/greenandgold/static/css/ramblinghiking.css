@@ -249,3 +249,17 @@
     margin-top: 15px;
     margin-bottom: 0px;
 }
+
+.podcast-img{
+    object-fit: cover;
+}
+
+.spotify{
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .spotify{
+        width: 100%;
+    }
+}
