@@ -12,12 +12,21 @@
   tab.innerHTML = '<button class="nav-link" id="pills-{{ $walkId }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ $walkId }}" type="button" role="tab" aria-controls="pills-{{ $walkId }}" aria-selected="false">{{ .Params.name | safeHTML }}</button>'
   document.getElementById('pills-tab').appendChild(tab);
 
-  {{ $urlpre := "https://api.danlee.uk/ramsoc/?url="}}
-  {{ $dataJ := getJSON $urlpre (.Get "os") }}
-  
-  createRoute({{ $dataJ }}, {{ .Params.name | safeHTML }}, {{$walkId}}.toString());
+  {{ $data := dict }}
+  {{ $url := "https://api.ramsoc.co.uk/?url=https://explore.osmaps.com/route/17112352/bakewell-walk-1--june-2023-fionn"}}
+  {{ with try (resources.GetRemote $url) }}
+    {{ with .Err }}
+      {{ errorf "%s" . }}
+    {{ else with .Value }}
+      {{ $data = . | transform.Unmarshal }}
+    {{ else }}
+      {{ errorf "Unable to get remote resource %q" $url }}
+    {{ end }}
+  {{ end }}
 
-  document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $dataJ 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $dataJ 2 }}).toFixed(2) + 'm</p>'
+  createRoute({{ $data }}, {{ .Params.name | safeHTML }}, {{$walkId}}.toString());
+
+  document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $data 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $data 2 }}).toFixed(2) + 'm</p>'
 
 
 
