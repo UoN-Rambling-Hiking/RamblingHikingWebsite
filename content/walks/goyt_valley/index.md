@@ -28,7 +28,7 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/7529-goyt-valley-sunday-hike
 
 {{% /walk %}}
 
-{{% walk name="Walk 3b" os="https://explore.osmaps.com/route/24944413/goyt-valley-walk-3b--december-2025-fionn%}}
+{{% walk name="Walk 3b" os="https://explore.osmaps.com/route/24944413/goyt-valley-walk-3b--december-2025-fionn"%}}
 
 
 {{% /walk %}}
