@@ -7,7 +7,7 @@ menu:
 title: Constitution
 ---
 
-*Last Updated: 02/02/23*
+*Last Updated: 05/02/25*
 
 UNIVERSITY OF NOTTINGHAM SPORT RAMBLING AND HIKING CLUB
 
@@ -41,13 +41,14 @@ UNIVERSITY OF NOTTINGHAM SPORT RAMBLING AND HIKING CLUB
 
 
    4. The Additional Committee Members shall be determined by the sport club in association to their competition and administrative needs:
-      1. Vice President shall be responsible for assisting committee members where desired and in the planning and running of large activities run by the Club.
+      1. Vice President shall be responsible for assisting committee members where desired. In addition, they will be directly responsible for helping the President run and organise the committee.
       2. Rambling Secretary shall be responsible for the planning of hiking activities of the Club.
       3. Social Secretary shall be responsible for the planning and running of the Club’s social activities.
       4. Safety Officer shall be responsible for compliance with the University of Nottingham Students’ Union health and safety guidelines and to organise the training and listing of walk leaders and first aiders.
       5. Publicity Officer shall be responsible for the Club’s public relations seeking to increase engagement and interest and to be responsible for the Club’s website and social media platforms.
       6. Equipment Officer shall be responsible for the maintenance of the Club’s equipment, ensure an accurate inventory and to ensure equipment is available for the Club’s rambling activities.
       7. Welfare Officer and Equity, Diversity and Inclusion (EDI) Officer  shall be responsible for coordinating with the UoN engage program and helping arrange the club’s Engage activities. They shall also be responsible for the general welfare of the Club’s members as well as the club’s efforts to promote equity, diversity and inclusion.
+      8. Trip secretary shall be responsible for planning, organising and running the ‘Weekend Aways’ (weekend-long trips). This may include (but is not limited to) finding hostels to present to committee, organising logistics (including minibus pickup timings and hostel cleaning) and working with the president with regards to communicating with members on the trip.
    5. Committee members must be full members of the Club.
    6. Two Honorary Vice Presidents, appointed by the President, will have a ceremonial position and non-organising role within the club.
    7. Committee members, who fail to fulfil their duties, may be removed from position by a simple majority vote of no confidence at an Extraordinary General Meeting (EGM) after attempting to reach a resolution through informal discussions with the Sports Officer. To propose a vote of no confidence, a written petition outlining the reasons for such a vote must be submitted to the Sports Officer from at least 20% of members, or 40 members, whichever is less, to the Club Committee
@@ -56,7 +57,7 @@ UNIVERSITY OF NOTTINGHAM SPORT RAMBLING AND HIKING CLUB
 
 5. Elections
    1. All committee members must be democratically elected and hold hustings at an Annual General Meeting (AGM) or at an Extraordinary General Meeting (EGM).
-   2. Elections shall be carried out in accordance with the Students’ Union Bye-Laws on Elections on all committee positions. It is recommended that elections are carried out online, centrally through the Students’ Union. 
+   2. Elections shall be carried out in accordance with the Students’ Union Bye-Laws on Elections on all committee positions. It is recommended that elections are carried out online, centrally through the Students’ Union.
 
 6. Finance
    1. All monies shall be held in accounts at the Students’ Union Finance Office with no accounts held externally.
