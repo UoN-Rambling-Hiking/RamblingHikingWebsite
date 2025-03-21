@@ -2,9 +2,9 @@ active:
   - identifier: president
     title: President
     short_title: Pres
-    name:
+    name: Jasmine Allan
     contact: president@ramsoc.co.uk
-    image:
+    image: /img/profiles/25/.jpg
   - identifier: vicepresident
     title: Vice President
     short_title: VP
@@ -14,13 +14,13 @@ active:
   - identifier: treasurer
     title: Treasurer
     short_title: Treasurer
-    name:
+    name: Jack Downing
     contact: treasurer@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: gensec
     title: General Secretary
     short_title: GenSec
-    name:
+    name: Luis Faulkner
     contact: secretary@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: saftey
@@ -32,37 +32,37 @@ active:
   - identifier: ramble
     title: Ramble Secretary
     short_title: Ramble
-    name:
+    name: Greg Dexter
     contact: ramble@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: social
     title: Social Secretary
     short_title: Social
-    name:
+    name: Maya ??
     contact: social@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: publicity
     title: Publicity Officer
     short_title: Publicity
-    name:
+    name: Matthew Plunkett
     contact: publicity@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: kit
-    title:
+    title: Kit Officer
     short_title: Kit
-    name: Karol Kukula
+    name: Maddie Fletcher
     contact: kit@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: welfare
     title: Welfare Officer
     short_title: Welfare
-    name:
+    name: Hannah ??
     contact: welfare@ramsoc.co.uk
     image: /img/profiles/25/.jpg
   - identifier: trip
     title: Trip Officer
     short_title: Trip Sec
-    name:
+    name: Karol Kukula
     contact: trip-sec@ramsoc.co.uk
     image: /img/profiles/25/.jpg
 twentyfour:
