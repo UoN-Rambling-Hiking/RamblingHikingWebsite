@@ -69,7 +69,139 @@
             </a>
             {{ end }}
         </div>
-        {{ end }}
+        <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Meet Your 2025 Committee</h2>
+        <div class="container text-center my-3">
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        {{ range .Site.Data.committee.active }}
+                        {{ if eq .title "President" }}
+                        <div class="carousel-item uon-carousel-item active">
+                            {{ else }}
+                            <div class="carousel-item uon-carousel-item">
+                                {{ end }}
+                                <div class="col-md-3 col-12">
+                                    <div class="my-2">
+                                        <div class="card-img">
+                                            <img src="{{ .image }}" class="bd-placeholder-img rounded-circle"
+                                                 style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
+                                                 width="175" height="175" alt="{{ .name }}">
+                                        </div>
+                                        <h2 class="fw-normal">{{ .short_title }}</h2>
+                                        <h5 class="fw-normal">{{ .name }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                           data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                           data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Our (Funny) Members</h2>
+        <div id="carouselMemberPhoto" class="carousel slide mb-5">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMemberPhoto" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/RHFunny01.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <a class="btn btn-outline-light mt-3 btn-sm" href="/img/RHFunny01.jpg" download>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/RHFunny02.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                        <a class="btn btn-outline-light mt-3 btn-sm" href="/img/RHFunny02.jpg" download>
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMemberPhoto"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMemberPhoto"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What You Can Expect</h2>
+        <div class="ratio ratio-16x9 mx-md-0">
+            <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
+        </div>
+        <div class="row row-cols-1 my-2 text-center row-cols-sm-3 ">
+            <div class="col p-sm-1 p-2">
+                {{ with or (resources.Get "/img/landing/landing1.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+                <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/gear">
+                    Gear
+                </a>
+            </div>
+            <div class="col p-sm-1 p-2">
+                {{ with or (resources.Get "/img/landing/landing2.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+                <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/calendar">
+                    Calendar
+                </a>
+            </div>
+            <div class="col p-sm-1 p-2">
+                {{ with or (resources.Get "/img/landing/landing3.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+                <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/faq">
+                    FAQ
+                </a>
+            </div>
+        </div>
+        <div class="row row-cols-3 my-1">
+            <div class="col p-1">
+                {{ with or (resources.Get "/img/landing/landing4.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+            </div>
+            <div class="col p-1">
+                {{ with or (resources.Get "/img/landing/landing5.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+            </div>
+            <div class="col p-1">
+                {{ with or (resources.Get "/img/landing/landing6.jpg") (resources.Get "/img/fallback.png") }}
+                {{ with .Fill "500x300" }}
+                <img src="{{ .RelPermalink }}" class="img-fluid">
+                {{end}}
+                {{end}}
+            </div>
+
+        </div>
     </div>
 
     <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What You Can Expect</h2>
