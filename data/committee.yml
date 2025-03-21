@@ -118,43 +118,43 @@ twentyfour:
     name: Izzy Redpath
     image: /img/profiles/24/Izzy.jpg
 twentythree:
-    - identifier: president
-      title: President
-      name: Dan Lee
-      image: /img/profiles/Dan-min.jpg
-    - identifier: treasurer
-      title: Treasurer
-      name: Amy Hopper
-      image: /img/profiles/Amy-min.jpg
-    - identifier: gensec
-      title: General Secretary
-      name: Holly Salaman
-      image: /img/profiles/Holly-min.jpg
-    - identifier: saftey
-      title: Safety Officer
-      name: Maddy Flynn
-      image: /img/profiles/Maddy-min.jpg
-    - identifier: ramble
-      title: Ramble Secretary
-      name: Fionn Mackie
-      image: /img/profiles/Fionn-min.jpg
-    - identifier: social
-      title: Social Secretary
-      name: Hafsa Sheikh
-      image: /img/profiles/Hafsa-min.jpg
-    - identifier: publicity
-      title: Publicity Officer
-      name: Theo Smith 
-      image: /img/profiles/Theo-min.jpg
-    - identifier: kit
-      title: Kit Secretary
-      name: Lily Sconce
-      image: /img/profiles/Lilly-min.jpg
-    - identifier: welfare
-      title: Welfare Officer
-      name: Ella McLeod
-      image: /img/profiles/Ella-min.jpg
-    - identifier: vicepresident
-      title: Vice President
-      name: Rammy
-      image: /img/profiles/rammy.jpeg
+  - identifier: president
+    title: President
+    name: Dan Lee
+    image: /img/profiles/Dan.jpg
+  - identifier: vicepresident
+    title: Vice President
+    name: Lewis Wilson
+    image: /img/profiles/23/Lewis.jpg
+  - identifier: treasurer
+    title: Treasurer
+    name: Amy Hopper
+    image: /img/profiles/23/Amy.jpg
+  - identifier: gensec
+    title: General Secretary
+    name: Holly Salaman
+    image: /img/profiles/23/Holly-min.jpg
+  - identifier: saftey
+    title: Safety Officer
+    name: Maddy Flynn
+    image: /img/profiles/23/Maddy-min.jpg
+  - identifier: ramble
+    title: Ramble Secretary
+    name: Fionn Mackie
+    image: /img/profiles/23/Fionn-min.jpg
+  - identifier: social
+    title: Social Secretary
+    name: Hafsa Sheikh
+    image: /img/profiles/23/Hafsa-min.jpg
+  - identifier: publicity
+    title: Publicity Officer
+    name: Theo Smith
+    image: /img/profiles/23/Theo-min.jpg
+  - identifier: kit
+    title: Kit Secretary
+    name: Lily Sconce
+    image: /img/profiles/23/Lilly-min.jpg
+  - identifier: welfare
+    title: Welfare Officer
+    name: Ella McLeod
+    image: /img/profiles/23/Ella-min.jpg
