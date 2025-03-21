@@ -12,7 +12,7 @@
   tab.innerHTML = '<button class="nav-link" id="pills-{{ $walkId }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ $walkId }}" type="button" role="tab" aria-controls="pills-{{ $walkId }}" aria-selected="false">{{ .Params.name | safeHTML }}</button>'
   document.getElementById('pills-tab').appendChild(tab);
 
-  {{ $urlpre := "https://api.danlee.uk/ramsoc/?url="}}
+  {{ $urlpre := "https://api.ramsoc.co.uk/?url="}}
   {{ $dataJ := getJSON $urlpre (.Get "os") }}
   
   createRoute({{ $dataJ }}, {{ .Params.name | safeHTML }}, {{$walkId}}.toString());

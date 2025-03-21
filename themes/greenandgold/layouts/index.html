@@ -1,13 +1,13 @@
 {{ define "main" }}
 
 <div class="bg-image" style="
-    background-image: url('/img/hero.jpg');
+    background-image: url('/img/hero.webp');
     background-size: cover;
     background-position: center center;
-    height: 95vh;
+    height: 92vh;
   ">
     <div style="background-color: rgba(0, 0, 0, 0.5);
-  height: 95vh;">
+  height: 92vh;">
         <div class="px-4 py-5 container hero">
             <div class="position-absolute top-lg-25">
                 <h1 class="display-1 fw-bold text-white font-uon">Rambling & Hiking Club</h1>
@@ -20,53 +20,92 @@
     </div>
 </div>
 
-<h2 class="display-2 text-center font-uon text-uon-gold my-3 fw-bold">Participation Club of the Year</h2>
-<h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
-<div class="container mt-5">
-    <div class="row row-cols-1 row-cols-sm-2">
+<h2 class="display-2 text-center font-uon text-uon-green mt-5 fw-bold">Listen to our podcast!</h2>
+<h3 class="display-7 text-uon-gold font-uon text-center mb-5">Recorded in partnership with BBC Radio 4 Ramblings</h3>
+<div class="container my-3">
+    <div class="row my-3">
+        <div class="col-lg text-center">
+            {{ with or (resources.Get "/img/landing/podcast_cover.jpg") (resources.Get "/img/fallback.png") }}
+            {{ with .Fill "500x500" }}
+            <img src="{{ .RelPermalink }}" class="img-fluid rounded-4 podcast-img mb-3 w-50">
+            {{end}}
+            {{end}}
+        </div>
+        <div class="col-md">
+            <div>
+            <p>This is Clare's 25th year of walking and talking on Ramblings! To mark this, ahem, milestone her first
+                hike of 2025 is with a group of students from the University of Nottingham who are all members of the
+                RamSoc (The Rambling and Hiking Society) which has just celebrated its 90th anniversary.
+            </p>
+            <p>
+                They met in Bakewell, Derbyshire on a rainy, windy, wintery Sunday morning and set off on a circular
+                hike taking in the grounds of Chatsworth House.
+            </p>
+            <p>
+                Producer: Karen Gregor
+            </p>
+            <p>
+                Presenter: Clare Balding
+            </p>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-uongreen mt-3" onclick="location.href='https://www.bbc.co.uk/sounds/play/m0026ngx';">Listen on BBC Sounds</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <iframe style="border-radius:12px" class="spotify" src="https://open.spotify.com/embed/episode/0RcpHht46Q1OgWbs9Oe4VC?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </div>
+
+    <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Upcoming Events</h2>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2">
             {{ $events := where .Site.RegularPages "Section" "walks" }}
             {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
             {{ range $events}}
-        <div class="col pb-5">
-            {{ if ne (strings.Chomp .Content) "" }}
-            <a href="{{ .RelPermalink }}">
-                {{end}}
-                <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
-                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
-                    {{ with .Fill "500x300" }}
-                    <img src="{{ .RelPermalink }}" class="img-fluid">
-                    {{end}}
-                    {{end}}
-                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
-                        <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
-                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
-                    </div>
-                </div>
+            <div class="col pb-5">
                 {{ if ne (strings.Chomp .Content) "" }}
-            </a>
-            {{end}}
-        </div>
-        {{ end }}
+                <a href="{{ .RelPermalink }}">
+                    {{end}}
+                    <div class="card border border-uon-gold border-4 text-white hvr-grow-shadow">
+                        {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                        {{ with .Fill "500x300" }}
+                        <img src="{{ .RelPermalink }}" class="img-fluid">
+                        {{end}}
+                        {{end}}
+                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                            <h3 class="card-title display-5">Next Walk: {{ .Title }}</h3>
+                            <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006 15:04PM" }}</p>
+                        </div>
+                    </div>
+                    {{ if ne (strings.Chomp .Content) "" }}
+                </a>
+                {{end}}
+            </div>
+            {{ end }}
             {{ $events := where .Site.RegularPages "Section" "socials" }}
             {{ $events := $events | intersect (where $events "Date" "ge" now) | last 1 }}
             {{ range $events}}
-        <div class="col">
-            {{ if ne (strings.Chomp .Content) "" }}
-            <a href="{{ .RelPermalink }}">
-                {{end}}
-                <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
-                    {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
-                    {{ with .Fill "500x300" }}
-                    <img src="{{ .RelPermalink }}" class="img-fluid">
-                    {{end}}
-                    {{end}}
-                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
-                        <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
-                        <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006" }}</p>
-                    </div>
-                </div>
+            <div class="col">
                 {{ if ne (strings.Chomp .Content) "" }}
-            </a>
+                <a href="{{ .RelPermalink }}">
+                    {{end}}
+                    <div class="card text-white border border-4 border-uon-green hvr-grow-shadow">
+                        {{ with or (.Resources.GetMatch "cover.*") (resources.Get "/img/fallback.png") }}
+                        {{ with .Fill "500x300" }}
+                        <img src="{{ .RelPermalink }}" class="img-fluid">
+                        {{end}}
+                        {{end}}
+                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.4)">
+                            <h3 class="card-title display-5">Next Social: {{ .Title }}</h3>
+                            <p class="card-text">{{ .Date.Format "Mon 02 Jan 2006 15:04PM" }}</p>
+                        </div>
+                    </div>
+                    {{ if ne (strings.Chomp .Content) "" }}
+                </a>
+                {{ end }}
+            </div>
             {{ end }}
         </div>
         <h2 class="display-2 text-center font-uon text-uon-green my-5 fw-bold">Meet Your 2025 Committee</h2>
@@ -204,70 +243,23 @@
         </div>
     </div>
 
-    <h2 class="display-2 text-center font-uon text-uon-green my-3 fw-bold">What You Can Expect</h2>
-    <div class="ratio ratio-16x9 mx-md-0">
-        <iframe src="https://drive.google.com/file/d/1QkRIEVL9_xcUtomyXh4KriWkWk9NDkR3/preview"></iframe>
-    </div>
-    <div class="row row-cols-1 my-2 text-center row-cols-sm-3 ">
-        <div class="col p-sm-1 p-2">
-            {{ with or (resources.Get "/img/landing/landing1.jpg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/gear">
-                Required Gear
-            </a>
-        </div>
-        <div class="col p-sm-1 p-2">
-            {{ with or (resources.Get "/img/landing/landing2.jpg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/calendar">
-                Calendar
-            </a>
-        </div>
-        <div class="col p-sm-1 p-2">
-            {{ with or (resources.Get "/img/landing/landing3.jpg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-            <a class="btn btn-uongreen mt-3 w-50 btn-lg" href="/faq">
-                FAQ
-            </a>
-        </div>
-    </div>
-    <div class="row row-cols-3 my-1">
-        <div class="col p-1">
-            {{ with or (resources.Get "/img/landing/landing4.jpg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-        </div>
-        <div class="col p-1">
-            {{ with or (resources.Get "/img/landing/landing5.jpeg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-        </div>
-        <div class="col p-1">
-            {{ with or (resources.Get "/img/landing/landing6.jpg") (resources.Get "/img/fallback.png") }}
-            {{ with .Fill "500x300" }}
-            <img src="{{ .RelPermalink }}" class="img-fluid">
-            {{end}}
-            {{end}}
-        </div>
+    <script>
+        let items = document.querySelectorAll('.uon-carousel-item')
 
-    </div>
-    <div class="text-center fst-italic pt-4">
-        <p>This site is new and any feedback would be greatly appreciated! <strong>webfeedback@ramsoc.co.uk</strong></p>
-    </div>
-</div>
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
 
+    </script>
 
-{{ end }}
+    {{ end }}
