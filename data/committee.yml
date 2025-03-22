@@ -4,7 +4,7 @@ active:
     short_title: Pres
     name: Jasmine Allan
     contact: president@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Jasmine.jpg
   - identifier: vicepresident
     title: Vice President
     short_title: VP
@@ -16,55 +16,55 @@ active:
     short_title: Treasurer
     name: Jack Downing
     contact: treasurer@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Jack.jpg
   - identifier: gensec
     title: General Secretary
     short_title: GenSec
     name: Luis Faulkner
     contact: secretary@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/rammy.jpeg
   - identifier: saftey
     title: Safety Officer
     short_title: Safety
     name: Harry Broadbelt
     contact: safety@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Harry.jpg
   - identifier: ramble
     title: Ramble Secretary
     short_title: Ramble
     name: Greg Dexter
     contact: ramble@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/rammy.jpeg
   - identifier: social
     title: Social Secretary
     short_title: Social
     name: Maya Nichols
     contact: social@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/rammy.jpeg
   - identifier: publicity
     title: Publicity Officer
     short_title: Publicity
     name: Matthew Plunkett
     contact: publicity@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/rammy.jpeg
   - identifier: kit
     title: Kit Officer
     short_title: Kit
     name: Maddie Fletcher
     contact: kit@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Maddy.jpg
   - identifier: welfare
     title: Welfare Officer
     short_title: Welfare
     name: Hannah Insley
     contact: welfare@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Hannah.jpg
   - identifier: trip
     title: Trip Officer
     short_title: Trip Sec
     name: Karol Kukula
     contact: trip-sec@ramsoc.co.uk
-    image: /img/profiles/25/.jpg
+    image: /img/profiles/25/Karol.jpg
 twentyfour:
   - identifier: president
     title: President
