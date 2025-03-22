@@ -14,7 +14,7 @@ ticket_link: "https://su.nottingham.ac.uk/events/id/7538-the-roaches-sunday-hike
 
 {{< /generalInfo >}}
 
-{{% walk name="Walk 1" os="https://explore.osmaps.com/route/25200218/the-roaches-walk-1--march-2025-fionn"%}}
+{{% walk name="Walk 1" os="https://explore.osmaps.com/route/25764850/the-roaches-walk-1--march-2025-fionn"%}}
 
 
 {{% /walk %}}
