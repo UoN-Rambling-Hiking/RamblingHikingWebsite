@@ -1,7 +1,15 @@
 {{ $walkId := now.UnixMicro }}
+{{ $data := dict }}
+{{ $osValue := .Get "os" }}
+{{ $url := printf "https://api.ramsoc.co.uk/?url=%s" $osValue }}
 
 <div class="tab-pane fade" id='pills-{{ $walkId}}' role="tabpanel" aria-labelledby='pills-{{ $walkId }}-tab' tabindex="0">
-  <h2>{{ .Params.name | safeHTML | htmlUnescape }}</h2>
+  <h1>{{ .Params.name | safeHTML | htmlUnescape }}</h1>
+  <h3 id="{{$walkId}}-elevation"></h3>
+  <h3 id="{{$walkId}}-distance"></h3>
+  <a class="btn btn-uongreen w-50 btn-lg" href="{{$osValue}}">
+    View on OS Maps
+  </a>
   <div id='{{ $walkId }}-info'></div>
   {{ .Inner  }}
 </div>
@@ -12,17 +20,14 @@
   tab.innerHTML = '<button class="nav-link" id="pills-{{ $walkId }}-tab" data-bs-toggle="pill" data-bs-target="#pills-{{ $walkId }}" type="button" role="tab" aria-controls="pills-{{ $walkId }}" aria-selected="false">{{ .Params.name | safeHTML }}</button>'
   document.getElementById('pills-tab').appendChild(tab);
 
-  {{ $data := dict }}
-  {{ $osValue := .Get "os" }}
-  {{ $url := printf "https://api.ramsoc.co.uk/?url=%s" $osValue }}
-  {{ $url }}
   {{ with try (resources.GetRemote $url) }}
     {{ with .Err }}
       {{ errorf "%s" . }}
     {{ else with .Value }}
       {{ $data = . | transform.Unmarshal }}
       createRoute({{ $data }}, {{ .Params.name | safeHTML }}, {{$walkId}});
-      document.getElementById('{{$walkId}}-info').innerHTML = '<p>Distance: ' + ({{ index $data 1 }} / 1000).toFixed(2) + 'km</p><p>Elevation: ' + ({{ index $data 2 }}).toFixed(2) + 'm</p>'
+      document.getElementById('{{$walkId}}-elevation').innerHTML = 'Elevation: ' + ({{ index $data 2 }}).toFixed(2) + 'm';
+      document.getElementById('{{$walkId}}-distance').innerHTML = 'Distance: ' + ({{ index $data 1 }} / 1000).toFixed(2) + 'km';
   {{ else }}
       {{ errorf "Unable to get remote resource %q" $url }}
     {{ end }}
