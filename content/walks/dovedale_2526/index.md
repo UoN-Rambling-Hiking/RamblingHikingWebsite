@@ -1,5 +1,5 @@
 ---
-title: "Dovedale - Just Play"
+title: "Dovedale"
 date: 2026-03-22T09:00:00-00:00
 lng: "-1.7833"
 lat: "53.0667"
