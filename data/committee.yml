@@ -4,67 +4,67 @@ active:
     short_title: Pres
     name: Matthew Plunkett
     contact: president@ramsoc.co.uk
-    image: /img/profiles/25/Jasmine.jpg
+    image: /img/profiles/26/Matthew.jpg
   - identifier: vicepresident
     title: Vice President
     short_title: VP
     name: Maddie Fletcher
     contact: vice-president@ramsoc.co.uk
-    image: /img/profiles/25/Theo.jpg
+    image: /img/profiles/26/Maddie.jpg
   - identifier: treasurer
     title: Treasurer
     short_title: Treasurer
     name: Sam Muir
     contact: treasurer@ramsoc.co.uk
-    image: /img/profiles/25/Jack.jpg
+    image: /img/profiles/26/Sam.jpg
   - identifier: gensec
     title: General Secretary
     short_title: GenSec
     name: Luis Faulkner
     contact: secretary@ramsoc.co.uk
-    image: /img/profiles/25/Luis.jpg
+    image: /img/profiles/26/Luis.jpg
   - identifier: saftey
     title: Safety Officer
     short_title: Safety
     name: Stanley Gray
     contact: safety@ramsoc.co.uk
-    image: /img/profiles/25/Harry.jpg
+    image: /img/profiles/26/Stanley.jpg
   - identifier: ramble
     title: Ramble Secretary
     short_title: Ramble
     name: Dan Cummings
     contact: ramble@ramsoc.co.uk
-    image: /img/profiles/rammy.jpeg
+    image: /img/profiles/26/Dan.jpeg
   - identifier: social1
     title: Social Secretary
     short_title: Social
     name: Maya Nichols
     contact: social@ramsoc.co.uk
-    image: /img/profiles/25/Maya.jpg
+    image: /img/profiles/26/Maya.jpg
   - identifier: social2
     title: Social Secretary
     short_title: Social
     name: Joel Aitken
     contact: social@ramsoc.co.uk
-    image: /img/profiles/25/Maya.jpg
+    image: /img/profiles/26/Joel.jpg
   - identifier: publicity
     title: Publicity Officer
     short_title: Publicity
     name: Tatty Mitchell
     contact: publicity@ramsoc.co.uk
-    image: /img/profiles/25/Matthew.jpg
+    image: /img/profiles/26/Tatty.jpg
   - identifier: kit
     title: Kit Officer
     short_title: Kit
     name: Duncan Connell
     contact: kit@ramsoc.co.uk
-    image: /img/profiles/25/Maddy.jpg
+    image: /img/profiles/26/Duncan.jpg
   - identifier: welfare
     title: Welfare Officer
     short_title: Welfare
     name: Hannah Insley
     contact: welfare@ramsoc.co.uk
-    image: /img/profiles/25/Hannah.jpg
+    image: /img/profiles/26/Hannah.jpg
 
 twentyfive:
 active:
