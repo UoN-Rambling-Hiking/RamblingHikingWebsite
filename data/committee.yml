@@ -67,7 +67,6 @@ active:
     image: /img/profiles/26/Hannah.jpg
 
 twentyfive:
-active:
   - identifier: president
     title: President
     short_title: Pres
